@@ -15,10 +15,11 @@ Pod::Spec.new do |s|
   s.source_files = "lib/IMHeaders/*"
   
   s.vendored_libraries = "lib/IMLibs/libAddressBook.a", "lib/IMLibs/libDialing.a", "lib/IMLibs/libUserCenter.a", "lib/IMLibs/libYHCCustonUI.a", "lib/IMLibs/libYHCECSDKManager.a", "lib/IMLibs/libYHCGeneral.a", "lib/IMLibs/libYHCManager.a", "lib/IMLibs/libYHCServerManeger.a", "lib/IMLibs/libYHCSettingManager.a"
+ 
+  #s.resources    = "lib/IMResource/**/*" 
   
-  spec.resources = ['lib/Bundle/*.bundle', 'lib/CustonUI/*', 'lib/Images/*.png', 'lib/Others/**/*', 'lib/Plist/*.plist', 'lib/Xib/*.xib']
+  s.resources = ['lib/IMResource/Bundle/*.bundle', 'lib/IMResource/CustonUI/*', 'lib/IMResource/Images/*.png', 'lib/IMResource/Others/**/*', 'lib/IMResource/Plist/*.plist', 'lib/IMResource/Xib/*.xib']
 
   s.requires_arc = true
 
 end
-
