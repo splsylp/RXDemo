@@ -1,0 +1,212 @@
+//
+//  UIButton+Utils.m
+//  Common
+//
+//  Created by keven on 2018/9/11.
+//  Copyright © 2018年 ronglian. All rights reserved.
+//
+
+#import "UIButton+Utils.h"
+
+static const  NSString *KEY_HIT_TEST_EDGE_INSETS = @"HitTestEdgeInsets";
+
+@implementation UIButton (Utils)
+
+- (void)setHitEdgeInsets:(UIEdgeInsets)hitEdgeInsets {
+    NSValue *value = [NSValue value:&hitEdgeInsets withObjCType:@encode(UIEdgeInsets)];
+    objc_setAssociatedObject(self, &KEY_HIT_TEST_EDGE_INSETS, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (UIEdgeInsets)hitEdgeInsets {
+    NSValue *value = objc_getAssociatedObject(self, &KEY_HIT_TEST_EDGE_INSETS);
+    if(value) {
+        UIEdgeInsets edgeInsets; [value getValue:&edgeInsets]; return edgeInsets;
+    } else {
+        return UIEdgeInsetsZero;
+    }
+}
+
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    if(UIEdgeInsetsEqualToEdgeInsets(self.hitEdgeInsets, UIEdgeInsetsZero) || !self.enabled || self.hidden) {
+        return [super pointInside:point withEvent:event];
+    }
+    
+    CGRect relativeFrame = self.bounds;
+    CGRect hitFrame = UIEdgeInsetsInsetRect(relativeFrame, self.hitEdgeInsets);
+    
+    return CGRectContainsPoint(hitFrame, point);
+}
+
+-(void)setButtonImageTitleStyle:(ButtonImageTitleStyle)style padding:(CGFloat)padding
+{
+    if (self.imageView.image != nil && self.titleLabel.text != nil)
+    {
+        //先还原
+        self.titleEdgeInsets = UIEdgeInsetsZero;
+        self.imageEdgeInsets = UIEdgeInsetsZero;
+        
+        CGRect imageRect = self.imageView.frame;
+        CGRect titleRect = self.titleLabel.frame;
+        
+        CGFloat totalHeight = imageRect.size.height + padding + titleRect.size.height;
+        CGFloat selfHeight = self.frame.size.height;
+        CGFloat selfWidth = self.frame.size.width;
+        
+        switch (style) {
+            case ButtonImageTitleStyleLeft:
+                if (padding != 0)
+                {
+                    self.titleEdgeInsets = UIEdgeInsetsMake(0,
+                                                            padding/2,
+                                                            0,
+                                                            -padding/2);
+                    
+                    self.imageEdgeInsets = UIEdgeInsetsMake(0,
+                                                            -padding/2,
+                                                            0,
+                                                            padding/2);
+                }
+                break;
+            case ButtonImageTitleStyleRight:
+            {
+                //图片在右，文字在左
+                self.titleEdgeInsets = UIEdgeInsetsMake(0,
+                                                        -(imageRect.size.width + padding/2),
+                                                        0,
+                                                        (imageRect.size.width + padding/2));
+                
+                self.imageEdgeInsets = UIEdgeInsetsMake(0,
+                                                        (titleRect.size.width+ padding/2),
+                                                        0,
+                                                        -(titleRect.size.width+ padding/2));
+            }
+                break;
+            case ButtonImageTitleStyleTop:
+            {
+                //图片在上，文字在下
+                self.titleEdgeInsets = UIEdgeInsetsMake(((selfHeight - totalHeight)/2 + imageRect.size.height + padding - titleRect.origin.y),
+                                                        (selfWidth/2 - titleRect.origin.x - titleRect.size.width /2) - (selfWidth - titleRect.size.width) / 2,
+                                                        -((selfHeight - totalHeight)/2 + imageRect.size.height + padding - titleRect.origin.y),
+                                                        -(selfWidth/2 - titleRect.origin.x - titleRect.size.width /2) - (selfWidth - titleRect.size.width) / 2);
+                
+                self.imageEdgeInsets = UIEdgeInsetsMake(((selfHeight - totalHeight)/2 - imageRect.origin.y),
+                                                        (selfWidth /2 - imageRect.origin.x - imageRect.size.width / 2),
+                                                        -((selfHeight - totalHeight)/2 - imageRect.origin.y),
+                                                        -(selfWidth /2 - imageRect.origin.x - imageRect.size.width / 2));
+                
+            }
+                break;
+            case ButtonImageTitleStyleBottom:
+            {
+                //图片在下，文字在上。
+                self.titleEdgeInsets = UIEdgeInsetsMake(((selfHeight - totalHeight)/2 - titleRect.origin.y),
+                                                        (selfWidth/2 - titleRect.origin.x - titleRect.size.width / 2) - (selfWidth - titleRect.size.width) / 2,
+                                                        -((selfHeight - totalHeight)/2 - titleRect.origin.y),
+                                                        -(selfWidth/2 - titleRect.origin.x - titleRect.size.width / 2) - (selfWidth - titleRect.size.width) / 2);
+                
+                self.imageEdgeInsets = UIEdgeInsetsMake(((selfHeight - totalHeight)/2 + titleRect.size.height + padding - imageRect.origin.y),
+                                                        (selfWidth /2 - imageRect.origin.x - imageRect.size.width / 2),
+                                                        -((selfHeight - totalHeight)/2 + titleRect.size.height + padding - imageRect.origin.y),
+                                                        -(selfWidth /2 - imageRect.origin.x - imageRect.size.width / 2));
+            }
+                break;
+            case ButtonImageTitleStyleCenterTop:
+            {
+                self.titleEdgeInsets = UIEdgeInsetsMake(-(titleRect.origin.y - padding),
+                                                        (selfWidth / 2 -  titleRect.origin.x - titleRect.size.width / 2) - (selfWidth - titleRect.size.width) / 2,
+                                                        (titleRect.origin.y - padding),
+                                                        -(selfWidth / 2 -  titleRect.origin.x - titleRect.size.width / 2) - (selfWidth - titleRect.size.width) / 2);
+                
+                self.imageEdgeInsets = UIEdgeInsetsMake(0,
+                                                        (selfWidth / 2 - imageRect.origin.x - imageRect.size.width / 2),
+                                                        0,
+                                                        -(selfWidth / 2 - imageRect.origin.x - imageRect.size.width / 2));
+            }
+                break;
+            case ButtonImageTitleStyleCenterBottom:
+            {
+                self.titleEdgeInsets = UIEdgeInsetsMake((selfHeight - padding - titleRect.origin.y - titleRect.size.height),
+                                                        (selfWidth / 2 -  titleRect.origin.x - titleRect.size.width / 2) - (selfWidth - titleRect.size.width) / 2,
+                                                        -(selfHeight - padding - titleRect.origin.y - titleRect.size.height),
+                                                        -(selfWidth / 2 -  titleRect.origin.x - titleRect.size.width / 2) - (selfWidth - titleRect.size.width) / 2);
+                
+                self.imageEdgeInsets = UIEdgeInsetsMake(0,
+                                                        (selfWidth / 2 - imageRect.origin.x - imageRect.size.width / 2),
+                                                        0,
+                                                        -(selfWidth / 2 - imageRect.origin.x - imageRect.size.width / 2));
+            }
+                break;
+            case ButtonImageTitleStyleCenterUp:
+            {
+                self.titleEdgeInsets = UIEdgeInsetsMake(-(titleRect.origin.y + titleRect.size.height - imageRect.origin.y + padding),
+                                                        (selfWidth / 2 -  titleRect.origin.x - titleRect.size.width / 2) - (selfWidth - titleRect.size.width) / 2,
+                                                        (titleRect.origin.y + titleRect.size.height - imageRect.origin.y + padding),
+                                                        -(selfWidth / 2 -  titleRect.origin.x - titleRect.size.width / 2) - (selfWidth - titleRect.size.width) / 2);
+                
+                self.imageEdgeInsets = UIEdgeInsetsMake(0,
+                                                        (selfWidth / 2 - imageRect.origin.x - imageRect.size.width / 2),
+                                                        0,
+                                                        -(selfWidth / 2 - imageRect.origin.x - imageRect.size.width / 2));
+            }
+                break;
+            case ButtonImageTitleStyleCenterDown:
+            {
+                self.titleEdgeInsets = UIEdgeInsetsMake((imageRect.origin.y + imageRect.size.height - titleRect.origin.y + padding),
+                                                        (selfWidth / 2 -  titleRect.origin.x - titleRect.size.width / 2) - (selfWidth - titleRect.size.width) / 2,
+                                                        -(imageRect.origin.y + imageRect.size.height - titleRect.origin.y + padding),
+                                                        -(selfWidth / 2 -  titleRect.origin.x - titleRect.size.width / 2) - (selfWidth - titleRect.size.width) / 2);
+                
+                self.imageEdgeInsets = UIEdgeInsetsMake(0,
+                                                        (selfWidth / 2 - imageRect.origin.x - imageRect.size.width / 2),
+                                                        0,
+                                                        -(selfWidth / 2 - imageRect.origin.x - imageRect.size.width / 2));
+            }
+                break;
+            case ButtonImageTitleStyleRightLeft:
+            {
+                //图片在右，文字在左，距离按钮两边边距
+                
+                self.titleEdgeInsets = UIEdgeInsetsMake(0,
+                                                        -(titleRect.origin.x - padding),
+                                                        0,
+                                                        (titleRect.origin.x - padding));
+                
+                self.imageEdgeInsets = UIEdgeInsetsMake(0,
+                                                        (selfWidth - padding - imageRect.origin.x - imageRect.size.width),
+                                                        0,
+                                                        -(selfWidth - padding - imageRect.origin.x - imageRect.size.width));
+            }
+                
+                break;
+                
+            case ButtonImageTitleStyleLeftRight:
+            {
+                //图片在左，文字在右，距离按钮两边边距
+                
+                self.titleEdgeInsets = UIEdgeInsetsMake(0,
+                                                        (selfWidth - padding - titleRect.origin.x - titleRect.size.width),
+                                                        0,
+                                                        -(selfWidth - padding - titleRect.origin.x - titleRect.size.width));
+                
+                self.imageEdgeInsets = UIEdgeInsetsMake(0,
+                                                        -(imageRect.origin.x - padding),
+                                                        0,
+                                                        (imageRect.origin.x - padding));
+                
+                
+                
+            }
+                break;
+            default:
+                break;
+        }
+    }
+    else {
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+        self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    }
+    
+}
+
+
+@end

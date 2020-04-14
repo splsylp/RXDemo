@@ -1,0 +1,97 @@
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <objc/runtime.h>
+#import "ECMessage+Ext.h"
+#import "KCConstants_string.h"
+#import "KCConstants_API.h"
+#import "IMCommon.h"
+#import "KitGlobalClass.h"
+#import "KitMsgData.h"
+#import "Common.h"
+#import "AppModel.h"
+#import "KitGroupMemberInfoData.h"
+#import "UIColor+Ext.h"
+#import "UIView+Ext.h"
+#import "UIButton+Ext.h"
+#import "NSString+Ext.h"
+#import "NSDictionary+Ext.h"
+#import "UIAlertView+Ext.h"
+#import "ChatMessageManager.h"
+#import "YXPExtension.h"
+#import "RXCommonDialog.h"
+#import "KitGroupInfoData.h"
+#import "ChatTools.h"
+#import "HYTSelectedMediaContactsCell.h"
+#import "KitGroupSelectViewController.h"
+#import "Chat.h"
+#import "RXChatRecordsViewController.h"
+#import "RXChatFilesViewController.h"
+#import "RestApi.h"
+#import "EmojiConvertor.h"
+#import "ChatViewCell.h"
+#import "ChatBurnCoverCell.h"
+#import "ChatViewCardCell.h"
+#import "ChatCallNoticeCell.h"
+#import "ChatViewTextCell.h"
+#import "ChatViewVoiceCell.h"
+#import "ChatViewImageCell.h"
+#import "ChatViewVideoCell.h"
+#import "ChatViewFileCell.h"
+#import "ChatViewCallTextCell.h"
+#import "ChatViewPreviewCell.h"
+#import "ChatViewLocationCell.h"
+#import "RXPicturePreviewViewController.h"
+#import "WebBrowserBaseViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <AVKit/AVKit.h>
+#import "HXSpecialData.h"
+#import "KCAPPAuth_string.h"
+#import "SendFileData.h"
+#import "HXFileCacheManager.h"
+#import "MSSBrowseDefine.h"
+#import "RXColorExChange.h"
+#import "HXMyFriendList.h"
+#import "NSDate+Ext.h"
+//MK
+#import "HYTApiClient.h"
+#import "HYTApiClient+Ext.h"
+//#import "ECModifyGroupMemberMsg.h"
+#import "MessageTypeManager.h"
+#import "UIImageView+Md5.h"
+//wang ming
+#import "CocoaLumberjack.h"
+#import <ReactiveCocoa.h>
+// 图片选择器
+#import "RX_TZImagePickerController.h"
+#import "UIView+RX_Layout.h"
+#import <Photos/Photos.h>
+#import "RX_TZImageManager.h"
+#import "RX_TZVideoPlayerController.h"
+#import "RX_TZPhotoPreviewController.h"
+#import "RX_TZGifPhotoPreviewController.h"
+#import "RX_TZLocationManager.h"
+#import "RX_TZAssetCell.h"
+#import "RXBaseNavgationController.h"
+
+#define KNOTIFICATION_onReceivedGroupNoticeDeleteMine @"KNOTIFICATION_onReceivedGroupNoticeDeleteMine"
+#define KNOTIFICATION_onMesssageChanged    @"KNOTIFICATION_onMesssageChanged"
+#define KNOTIFICATION_onReceivedGroupNotice    @"KNOTIFICATION_onReceivedGroupNotice"
+#define KNOTIFICATION_onConnected       @"KNOTIFICATION_onConnected"
+#define KNotice_ReloadSessionGroup  @"KNotice_ReloadSessionGroup"//刷新沟通界面显示群组信息
+#define KNOTIFICATION_onRecordingAmplitude    @"KNOTIFICATION_onRecordingAmplitude"
+
+#import "RXThirdPart.h"
+#import "NSObject+Ext.h"
+#import "NSAttributedString+Color.h"
+
+#define SETUPTOPNEWTIME @"SETUPTOPNEWTIME" //置顶的时间
+// eagle代码混淆 debug不生效
+#if DEBUG
+#else
+#import "YZcodeObfuscation.h"
+#endif
+
+#endif

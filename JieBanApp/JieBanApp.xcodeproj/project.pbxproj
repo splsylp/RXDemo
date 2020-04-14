@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		456679C32445A1B500BCBF03 /* libAppModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 456679AA2445A05A00BCBF03 /* libAppModel.a */; };
+		456679C42445A1B500BCBF03 /* libBaseComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 456679B62445A07B00BCBF03 /* libBaseComponent.a */; };
+		456679C52445A1B500BCBF03 /* libChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 456679BC2445A08900BCBF03 /* libChat.a */; };
+		456679C62445A1B500BCBF03 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 456679C22445A09600BCBF03 /* libCommon.a */; };
 		4588DE9F243DA7B60008FC45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4588DE9E243DA7B60008FC45 /* AppDelegate.m */; };
 		4588DEA8243DA7B60008FC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4588DEA6243DA7B60008FC45 /* Main.storyboard */; };
 		4588DEAA243DA7BA0008FC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4588DEA9243DA7BA0008FC45 /* Assets.xcassets */; };
@@ -14,10 +18,6 @@
 		4588DEB0243DA7BA0008FC45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4588DEAF243DA7BA0008FC45 /* main.m */; };
 		4588DEBA243DA7BA0008FC45 /* JieBanAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4588DEB9243DA7BA0008FC45 /* JieBanAppTests.m */; };
 		4588DEC5243DA7BA0008FC45 /* JieBanAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4588DEC4243DA7BA0008FC45 /* JieBanAppUITests.m */; };
-		4588E22B243DB1F20008FC45 /* libChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4588E17A243DB1F10008FC45 /* libChat.a */; };
-		4588E22C243DB1F20008FC45 /* libBaseComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4588E17B243DB1F10008FC45 /* libBaseComponent.a */; };
-		4588E22D243DB1F20008FC45 /* libAppModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4588E17C243DB1F10008FC45 /* libAppModel.a */; };
-		4588E22E243DB1F30008FC45 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4588E17D243DB1F10008FC45 /* libCommon.a */; };
 		4588E2C9243DB2DA0008FC45 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4588E2C8243DB2DA0008FC45 /* CoreFoundation.framework */; };
 		4588E2CB243DB2E90008FC45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4588E2CA243DB2E90008FC45 /* CoreGraphics.framework */; };
 		4588E2CD243DB2F30008FC45 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4588E2CC243DB2F30008FC45 /* CoreTelephony.framework */; };
@@ -1094,6 +1094,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		456679A92445A05A00BCBF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456679A42445A05A00BCBF03 /* AppModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 82BAEA901D45C373006F91FF;
+			remoteInfo = AppModel;
+		};
+		456679B52445A07B00BCBF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456679B12445A07B00BCBF03 /* BaseComponent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 827D5DBC1D4782E900EC5DF0;
+			remoteInfo = BaseComponent;
+		};
+		456679BB2445A08900BCBF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456679B72445A08900BCBF03 /* Chat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 82AD2F641D47099900F145D6;
+			remoteInfo = Chat;
+		};
+		456679C12445A09600BCBF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456679BD2445A09500BCBF03 /* Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 82AD2FDA1D47623700F145D6;
+			remoteInfo = Common;
+		};
 		4588DEB6243DA7BA0008FC45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4588DE92243DA7B60008FC45 /* Project object */;
@@ -1111,6 +1139,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		456679A42445A05A00BCBF03 /* AppModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppModel.xcodeproj; path = src/AppModel/AppModel/AppModel.xcodeproj; sourceTree = "<group>"; };
+		456679B12445A07B00BCBF03 /* BaseComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseComponent.xcodeproj; path = src/BaseComponent/BaseComponent/BaseComponent.xcodeproj; sourceTree = "<group>"; };
+		456679B72445A08900BCBF03 /* Chat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Chat.xcodeproj; path = src/Chat/Chat/Chat.xcodeproj; sourceTree = "<group>"; };
+		456679BD2445A09500BCBF03 /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = src/Common/Common/Common.xcodeproj; sourceTree = "<group>"; };
 		4588DE9A243DA7B60008FC45 /* JieBanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JieBanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4588DE9D243DA7B60008FC45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4588DE9E243DA7B60008FC45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1125,10 +1157,6 @@
 		4588DEC0243DA7BA0008FC45 /* JieBanAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JieBanAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4588DEC4243DA7BA0008FC45 /* JieBanAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JieBanAppUITests.m; sourceTree = "<group>"; };
 		4588DEC6243DA7BA0008FC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4588E17A243DB1F10008FC45 /* libChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libChat.a; sourceTree = "<group>"; };
-		4588E17B243DB1F10008FC45 /* libBaseComponent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaseComponent.a; sourceTree = "<group>"; };
-		4588E17C243DB1F10008FC45 /* libAppModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppModel.a; sourceTree = "<group>"; };
-		4588E17D243DB1F10008FC45 /* libCommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCommon.a; sourceTree = "<group>"; };
 		4588E2C8243DB2DA0008FC45 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		4588E2CA243DB2E90008FC45 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4588E2CC243DB2F30008FC45 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -2253,6 +2281,7 @@
 				4588E2E1243DB3A10008FC45 /* libc++.tbd in Frameworks */,
 				4588E2DF243DB3900008FC45 /* libxml2.tbd in Frameworks */,
 				4588E2DD243DB3820008FC45 /* libsqlite3.tbd in Frameworks */,
+				456679C32445A1B500BCBF03 /* libAppModel.a in Frameworks */,
 				4588E2DB243DB3740008FC45 /* libresolv.9.tbd in Frameworks */,
 				4588E2D9243DB3690008FC45 /* libicucore.tbd in Frameworks */,
 				4588E2D7243DB35A0008FC45 /* libz.tbd in Frameworks */,
@@ -2266,23 +2295,22 @@
 				4588E2CF243DB3040008FC45 /* AVFoundation.framework in Frameworks */,
 				4588E2CD243DB2F30008FC45 /* CoreTelephony.framework in Frameworks */,
 				4588E2CB243DB2E90008FC45 /* CoreGraphics.framework in Frameworks */,
+				456679C52445A1B500BCBF03 /* libChat.a in Frameworks */,
 				4588E2C9243DB2DA0008FC45 /* CoreFoundation.framework in Frameworks */,
 				45E9281A243F0BB400C3B4C3 /* QMapSearchKit.framework in Frameworks */,
 				45E92819243F0BB400C3B4C3 /* QMapKit.framework in Frameworks */,
 				45E9203B243EF03200C3B4C3 /* libDialing.a in Frameworks */,
 				45E92038243EF03200C3B4C3 /* libYHCManager.a in Frameworks */,
+				456679C42445A1B500BCBF03 /* libBaseComponent.a in Frameworks */,
 				45E92036243EF03200C3B4C3 /* libAddressBook.a in Frameworks */,
 				45E92033243EF03200C3B4C3 /* libUserCenter.a in Frameworks */,
 				45E92037243EF03200C3B4C3 /* libYHCSettingManager.a in Frameworks */,
-				4588E22C243DB1F20008FC45 /* libBaseComponent.a in Frameworks */,
-				4588E22D243DB1F20008FC45 /* libAppModel.a in Frameworks */,
+				456679C62445A1B500BCBF03 /* libCommon.a in Frameworks */,
 				99E5A56A27BB7287224E6FC2 /* libPods-JieBanApp.a in Frameworks */,
 				45E92039243EF03200C3B4C3 /* libYHCECSDKManager.a in Frameworks */,
 				45E9203A243EF03200C3B4C3 /* libYHCGeneral.a in Frameworks */,
 				45E92035243EF03200C3B4C3 /* libYHCCustonUI.a in Frameworks */,
 				45E92034243EF03200C3B4C3 /* libYHCServerManeger.a in Frameworks */,
-				4588E22B243DB1F20008FC45 /* libChat.a in Frameworks */,
-				4588E22E243DB1F30008FC45 /* libCommon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2303,9 +2331,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		456679A52445A05A00BCBF03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456679AA2445A05A00BCBF03 /* libAppModel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		456679B22445A07B00BCBF03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456679B62445A07B00BCBF03 /* libBaseComponent.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		456679B82445A08900BCBF03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456679BC2445A08900BCBF03 /* libChat.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		456679BE2445A09500BCBF03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456679C22445A09600BCBF03 /* libCommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4588DE91243DA7B60008FC45 = {
 			isa = PBXGroup;
 			children = (
+				456679BD2445A09500BCBF03 /* Common.xcodeproj */,
+				456679B72445A08900BCBF03 /* Chat.xcodeproj */,
+				456679B12445A07B00BCBF03 /* BaseComponent.xcodeproj */,
+				456679A42445A05A00BCBF03 /* AppModel.xcodeproj */,
 				4588DE9C243DA7B60008FC45 /* JieBanApp */,
 				4588DEB8243DA7BA0008FC45 /* JieBanAppTests */,
 				4588DEC3243DA7BA0008FC45 /* JieBanAppUITests */,
@@ -2378,10 +2442,6 @@
 		4588E179243DB1F10008FC45 /* IMLibs */ = {
 			isa = PBXGroup;
 			children = (
-				4588E17A243DB1F10008FC45 /* libChat.a */,
-				4588E17B243DB1F10008FC45 /* libBaseComponent.a */,
-				4588E17C243DB1F10008FC45 /* libAppModel.a */,
-				4588E17D243DB1F10008FC45 /* libCommon.a */,
 				45E9202D243EF03100C3B4C3 /* libAddressBook.a */,
 				45E92032243EF03200C3B4C3 /* libDialing.a */,
 				45E9202A243EF03100C3B4C3 /* libUserCenter.a */,
@@ -3704,6 +3764,24 @@
 			mainGroup = 4588DE91243DA7B60008FC45;
 			productRefGroup = 4588DE9B243DA7B60008FC45 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 456679A52445A05A00BCBF03 /* Products */;
+					ProjectRef = 456679A42445A05A00BCBF03 /* AppModel.xcodeproj */;
+				},
+				{
+					ProductGroup = 456679B22445A07B00BCBF03 /* Products */;
+					ProjectRef = 456679B12445A07B00BCBF03 /* BaseComponent.xcodeproj */;
+				},
+				{
+					ProductGroup = 456679B82445A08900BCBF03 /* Products */;
+					ProjectRef = 456679B72445A08900BCBF03 /* Chat.xcodeproj */;
+				},
+				{
+					ProductGroup = 456679BE2445A09500BCBF03 /* Products */;
+					ProjectRef = 456679BD2445A09500BCBF03 /* Common.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4588DE99243DA7B60008FC45 /* JieBanApp */,
@@ -3712,6 +3790,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		456679AA2445A05A00BCBF03 /* libAppModel.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppModel.a;
+			remoteRef = 456679A92445A05A00BCBF03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		456679B62445A07B00BCBF03 /* libBaseComponent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBaseComponent.a;
+			remoteRef = 456679B52445A07B00BCBF03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		456679BC2445A08900BCBF03 /* libChat.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libChat.a;
+			remoteRef = 456679BB2445A08900BCBF03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		456679C22445A09600BCBF03 /* libCommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommon.a;
+			remoteRef = 456679C12445A09600BCBF03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4588DE98243DA7B60008FC45 /* Resources */ = {
