@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RXCommonDialog">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIx-cI-U6e">
+                    <rect key="frame" x="0.0" y="0.0" width="260" height="74.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="将清空所有个人和群的聊天记录" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvC-OZ-vrt">
+                            <rect key="frame" x="0.0" y="0.0" width="260" height="74.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="SvC-OZ-vrt" secondAttribute="trailing" id="96O-lF-dOZ"/>
+                        <constraint firstItem="SvC-OZ-vrt" firstAttribute="top" secondItem="oIx-cI-U6e" secondAttribute="top" id="GBB-ek-UWw"/>
+                        <constraint firstItem="SvC-OZ-vrt" firstAttribute="leading" secondItem="oIx-cI-U6e" secondAttribute="leading" id="PkA-Jj-4Wk"/>
+                        <constraint firstAttribute="bottom" secondItem="SvC-OZ-vrt" secondAttribute="bottom" id="kJF-Cq-Ctk"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8b-hx-dTm">
+                    <rect key="frame" x="0.0" y="75.5" width="129.5" height="44.5"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionHandle:" destination="iN0-l3-epB" eventType="touchUpInside" id="HLT-DL-caa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHO-Kt-sGP">
+                    <rect key="frame" x="130.5" y="75.5" width="129.5" height="44.5"/>
+                    <state key="normal" title="清空">
+                        <color key="titleColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionHandle:" destination="iN0-l3-epB" eventType="touchUpInside" id="US9-tb-CaJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="B8b-hx-dTm" secondAttribute="bottom" id="7qz-hC-XUa"/>
+                <constraint firstAttribute="bottom" secondItem="LHO-Kt-sGP" secondAttribute="bottom" id="7s6-fc-xFc"/>
+                <constraint firstItem="B8b-hx-dTm" firstAttribute="height" secondItem="oIx-cI-U6e" secondAttribute="height" multiplier="0.6" id="9P1-bn-NmN"/>
+                <constraint firstAttribute="trailing" secondItem="LHO-Kt-sGP" secondAttribute="trailing" id="CfL-A3-gpV"/>
+                <constraint firstItem="oIx-cI-U6e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GX3-6k-l26"/>
+                <constraint firstItem="oIx-cI-U6e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WBV-rg-1To"/>
+                <constraint firstAttribute="trailing" secondItem="oIx-cI-U6e" secondAttribute="trailing" id="XI6-me-OlT"/>
+                <constraint firstItem="LHO-Kt-sGP" firstAttribute="width" secondItem="B8b-hx-dTm" secondAttribute="width" id="cl8-XQ-RhF"/>
+                <constraint firstItem="B8b-hx-dTm" firstAttribute="top" secondItem="oIx-cI-U6e" secondAttribute="bottom" constant="1" id="cwe-VS-vUk"/>
+                <constraint firstItem="B8b-hx-dTm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fLF-tM-8p3"/>
+                <constraint firstItem="LHO-Kt-sGP" firstAttribute="height" secondItem="B8b-hx-dTm" secondAttribute="height" id="lzt-iL-wYy"/>
+                <constraint firstItem="LHO-Kt-sGP" firstAttribute="leading" secondItem="B8b-hx-dTm" secondAttribute="trailing" constant="1" id="r9z-nY-s39"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftButton" destination="B8b-hx-dTm" id="Yzo-r0-jAA"/>
+                <outlet property="rightButton" destination="LHO-Kt-sGP" id="BbV-li-T9m"/>
+                <outlet property="textLabel" destination="SvC-OZ-vrt" id="z7c-bR-H5C"/>
+            </connections>
+            <point key="canvasLocation" x="356.80000000000001" y="154.72263868065968"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YHCConfInfoViewController">
+            <connections>
+                <outlet property="bgView" destination="bg0-nr-IfF" id="Ora-K9-hc6"/>
+                <outlet property="bgViewTopLayout" destination="XaT-rc-cBi" id="AvW-yz-czk"/>
+                <outlet property="tableView" destination="qnn-iU-nvH" id="BEk-Jz-JCT"/>
+                <outlet property="topWhiteBgViewHeightLayout" destination="z2f-kM-r0x" id="yEf-Bf-FGu"/>
+                <outlet property="topWhiteBgview" destination="ank-AP-RXI" id="aOg-zH-h8q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yhc_conference_info_bg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-nr-IfF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="350" id="D5Y-aZ-8S8"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qnn-iU-nvH" customClass="YHCBaseTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1lT-Gd-fuD"/>
+                        <outlet property="delegate" destination="-1" id="WjJ-Ha-Yl9"/>
+                    </connections>
+                </tableView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ank-AP-RXI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="z2f-kM-r0x"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bg0-nr-IfF" secondAttribute="trailing" id="6Yq-HK-caa"/>
+                <constraint firstItem="bg0-nr-IfF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7dj-bu-ysP"/>
+                <constraint firstItem="bg0-nr-IfF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9UX-eJ-O29"/>
+                <constraint firstAttribute="trailing" secondItem="bg0-nr-IfF" secondAttribute="trailing" id="AYr-Sl-037"/>
+                <constraint firstAttribute="bottom" secondItem="qnn-iU-nvH" secondAttribute="bottom" id="Am7-Xo-TyG"/>
+                <constraint firstItem="ank-AP-RXI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BnU-kg-ZXd"/>
+                <constraint firstAttribute="trailing" secondItem="qnn-iU-nvH" secondAttribute="trailing" id="CG9-Cy-hS3"/>
+                <constraint firstItem="ank-AP-RXI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LEP-N2-bZb"/>
+                <constraint firstItem="qnn-iU-nvH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NK4-t9-9ec"/>
+                <constraint firstItem="bg0-nr-IfF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Us1-Sy-jxM"/>
+                <constraint firstItem="bg0-nr-IfF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XaT-rc-cBi"/>
+                <constraint firstItem="qnn-iU-nvH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eKT-r3-Zvl"/>
+                <constraint firstAttribute="trailing" secondItem="ank-AP-RXI" secondAttribute="trailing" id="y33-Hr-Rrr"/>
+            </constraints>
+            <point key="canvasLocation" x="-460" y="120"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="yhc_conference_info_bg1.png" width="372.5" height="215"/>
+    </resources>
+</document>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Vca-HK-581" customClass="KitKeyBoard">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="345"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56B-8H-CMf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+                    <subviews>
+                        <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hC7-mP-HCj">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9I9-4a-J4r">
+                                    <rect key="frame" x="106.5" y="0.0" width="107" height="65"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" image="keyboard_02.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_02_on.png"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YA-5e-f2A">
+                                    <rect key="frame" x="213.5" y="0.0" width="106.5" height="65"/>
+                                    <state key="normal" image="keyboard_03.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_03_on.png"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Z0-4a-Vh2">
+                                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="65"/>
+                                    <state key="normal" image="keyboard_01.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_01_on.png"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="9I9-4a-J4r" firstAttribute="top" secondItem="hC7-mP-HCj" secondAttribute="top" id="0D6-uP-jLQ"/>
+                                <constraint firstAttribute="trailing" secondItem="7YA-5e-f2A" secondAttribute="trailing" id="7vs-bl-cn8"/>
+                                <constraint firstItem="9I9-4a-J4r" firstAttribute="leading" secondItem="2Z0-4a-Vh2" secondAttribute="trailing" id="RVS-kD-D2o"/>
+                                <constraint firstItem="7YA-5e-f2A" firstAttribute="width" secondItem="2Z0-4a-Vh2" secondAttribute="width" id="X1h-Ie-XQ2"/>
+                                <constraint firstItem="7YA-5e-f2A" firstAttribute="leading" secondItem="9I9-4a-J4r" secondAttribute="trailing" id="Yxh-aL-bo0"/>
+                                <constraint firstItem="7YA-5e-f2A" firstAttribute="width" secondItem="9I9-4a-J4r" secondAttribute="width" id="dzS-lb-kfB"/>
+                                <constraint firstAttribute="bottom" secondItem="7YA-5e-f2A" secondAttribute="bottom" id="kMh-MM-K8P"/>
+                                <constraint firstItem="2Z0-4a-Vh2" firstAttribute="top" secondItem="hC7-mP-HCj" secondAttribute="top" id="kqk-Ze-eYa"/>
+                                <constraint firstAttribute="bottom" secondItem="9I9-4a-J4r" secondAttribute="bottom" id="l3l-NV-tAG"/>
+                                <constraint firstItem="2Z0-4a-Vh2" firstAttribute="leading" secondItem="hC7-mP-HCj" secondAttribute="leading" id="m9m-OG-lWa"/>
+                                <constraint firstAttribute="bottom" secondItem="2Z0-4a-Vh2" secondAttribute="bottom" id="mut-W5-ZkG"/>
+                                <constraint firstItem="7YA-5e-f2A" firstAttribute="top" secondItem="hC7-mP-HCj" secondAttribute="top" id="ox4-wL-Opg"/>
+                            </constraints>
+                        </view>
+                        <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTO-L7-yO6">
+                            <rect key="frame" x="0.0" y="65" width="320" height="65"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJj-Dz-Yyt">
+                                    <rect key="frame" x="106.5" y="0.0" width="107" height="65"/>
+                                    <state key="normal" image="keyboard_05.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_05_on.png"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enq-RE-r32">
+                                    <rect key="frame" x="213.5" y="0.0" width="106.5" height="65"/>
+                                    <state key="normal" image="keyboard_06.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_06_on.png"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHW-Es-iuk">
+                                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="65"/>
+                                    <state key="normal" image="keyboard_04.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_04_on.png"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="jJj-Dz-Yyt" firstAttribute="leading" secondItem="JHW-Es-iuk" secondAttribute="trailing" id="IYP-86-KTQ"/>
+                                <constraint firstAttribute="bottom" secondItem="JHW-Es-iuk" secondAttribute="bottom" id="KZQ-VH-aOW"/>
+                                <constraint firstAttribute="bottom" secondItem="Enq-RE-r32" secondAttribute="bottom" id="LDX-Td-zMW"/>
+                                <constraint firstAttribute="trailing" secondItem="Enq-RE-r32" secondAttribute="trailing" id="Pzz-5x-yPo"/>
+                                <constraint firstItem="JHW-Es-iuk" firstAttribute="width" secondItem="jJj-Dz-Yyt" secondAttribute="width" id="VMS-TY-NT9"/>
+                                <constraint firstItem="JHW-Es-iuk" firstAttribute="top" secondItem="cTO-L7-yO6" secondAttribute="top" id="WvN-sy-4S1"/>
+                                <constraint firstItem="Enq-RE-r32" firstAttribute="top" secondItem="cTO-L7-yO6" secondAttribute="top" id="Zw3-G9-otg"/>
+                                <constraint firstItem="Enq-RE-r32" firstAttribute="leading" secondItem="jJj-Dz-Yyt" secondAttribute="trailing" id="c9Z-pR-gyV"/>
+                                <constraint firstItem="JHW-Es-iuk" firstAttribute="width" secondItem="Enq-RE-r32" secondAttribute="width" id="eVo-w6-X2D"/>
+                                <constraint firstItem="JHW-Es-iuk" firstAttribute="leading" secondItem="cTO-L7-yO6" secondAttribute="leading" id="jw8-zP-Z68"/>
+                                <constraint firstItem="jJj-Dz-Yyt" firstAttribute="top" secondItem="cTO-L7-yO6" secondAttribute="top" id="pMD-zA-iI8"/>
+                                <constraint firstAttribute="bottom" secondItem="jJj-Dz-Yyt" secondAttribute="bottom" id="si3-gV-zZq"/>
+                            </constraints>
+                        </view>
+                        <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9K-5q-oPI">
+                            <rect key="frame" x="0.0" y="130" width="320" height="65"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoq-sF-VxE">
+                                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="65"/>
+                                    <state key="normal" image="keyboard_07.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_07_on.png"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czH-am-ORJ">
+                                    <rect key="frame" x="106.5" y="0.0" width="107" height="65"/>
+                                    <state key="normal" image="keyboard_08.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_08_on.png"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d6-UH-MOK">
+                                    <rect key="frame" x="213.5" y="0.0" width="106.5" height="65"/>
+                                    <state key="normal" image="keyboard_09.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_09_on.png"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="9d6-UH-MOK" secondAttribute="bottom" id="7NT-9s-o3z"/>
+                                <constraint firstAttribute="bottom" secondItem="Eoq-sF-VxE" secondAttribute="bottom" id="8Ba-9a-Hg4"/>
+                                <constraint firstItem="Eoq-sF-VxE" firstAttribute="leading" secondItem="T9K-5q-oPI" secondAttribute="leading" id="CKo-F0-hj4"/>
+                                <constraint firstItem="9d6-UH-MOK" firstAttribute="width" secondItem="Eoq-sF-VxE" secondAttribute="width" id="ELg-Mr-rEO"/>
+                                <constraint firstItem="czH-am-ORJ" firstAttribute="leading" secondItem="Eoq-sF-VxE" secondAttribute="trailing" id="LLE-8w-VDU"/>
+                                <constraint firstItem="9d6-UH-MOK" firstAttribute="top" secondItem="T9K-5q-oPI" secondAttribute="top" id="Pao-g5-jel"/>
+                                <constraint firstItem="9d6-UH-MOK" firstAttribute="leading" secondItem="czH-am-ORJ" secondAttribute="trailing" id="V6y-B5-mF6"/>
+                                <constraint firstAttribute="bottom" secondItem="czH-am-ORJ" secondAttribute="bottom" id="bc9-x3-eUa"/>
+                                <constraint firstItem="czH-am-ORJ" firstAttribute="top" secondItem="T9K-5q-oPI" secondAttribute="top" id="dER-mZ-zTh"/>
+                                <constraint firstAttribute="trailing" secondItem="9d6-UH-MOK" secondAttribute="trailing" id="f26-Iz-t9C"/>
+                                <constraint firstItem="9d6-UH-MOK" firstAttribute="width" secondItem="czH-am-ORJ" secondAttribute="width" id="i0u-Ib-LoL"/>
+                                <constraint firstItem="Eoq-sF-VxE" firstAttribute="top" secondItem="T9K-5q-oPI" secondAttribute="top" id="tZt-vd-5Mh"/>
+                            </constraints>
+                        </view>
+                        <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qo-se-3Cj">
+                            <rect key="frame" x="0.0" y="195" width="320" height="65"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjK-iv-Ven">
+                                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="65"/>
+                                    <state key="normal" image="keyboard_10.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_10_on.png"/>
+                                    <connections>
+                                        <action selector="onClickStarButton:" destination="Vca-HK-581" eventType="touchUpInside" id="NDp-OY-Cko"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2r-4Z-JhD">
+                                    <rect key="frame" x="106.5" y="0.0" width="107" height="65"/>
+                                    <state key="normal" image="keyboard_11.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_11_on.png"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMK-K1-yxD">
+                                    <rect key="frame" x="213.5" y="0.0" width="106.5" height="65"/>
+                                    <state key="normal" image="keyboard_12.png">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted" image="keyboard_12_on.png"/>
+                                    <connections>
+                                        <action selector="onClickJingButton:" destination="-2" eventType="touchUpInside" id="jce-fB-gBK"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="l2r-4Z-JhD" firstAttribute="top" secondItem="9qo-se-3Cj" secondAttribute="top" id="0Il-4U-6vx"/>
+                                <constraint firstItem="EMK-K1-yxD" firstAttribute="leading" secondItem="l2r-4Z-JhD" secondAttribute="trailing" id="1Eo-dS-uKw"/>
+                                <constraint firstItem="EMK-K1-yxD" firstAttribute="top" secondItem="9qo-se-3Cj" secondAttribute="top" id="4Vk-w5-o8A"/>
+                                <constraint firstItem="EMK-K1-yxD" firstAttribute="width" secondItem="l2r-4Z-JhD" secondAttribute="width" id="FnF-A5-9Zw"/>
+                                <constraint firstAttribute="bottom" secondItem="EMK-K1-yxD" secondAttribute="bottom" id="SdL-Xt-Be4"/>
+                                <constraint firstAttribute="trailing" secondItem="EMK-K1-yxD" secondAttribute="trailing" id="Wa2-cr-Mzu"/>
+                                <constraint firstItem="l2r-4Z-JhD" firstAttribute="leading" secondItem="EjK-iv-Ven" secondAttribute="trailing" id="XWM-JU-ms7"/>
+                                <constraint firstItem="EMK-K1-yxD" firstAttribute="width" secondItem="EjK-iv-Ven" secondAttribute="width" id="YPv-vK-Wbk"/>
+                                <constraint firstItem="EjK-iv-Ven" firstAttribute="top" secondItem="9qo-se-3Cj" secondAttribute="top" id="euL-br-JG0"/>
+                                <constraint firstItem="EjK-iv-Ven" firstAttribute="leading" secondItem="9qo-se-3Cj" secondAttribute="leading" id="f6Y-tT-qeE"/>
+                                <constraint firstAttribute="bottom" secondItem="EjK-iv-Ven" secondAttribute="bottom" id="vsD-Hy-Kx0"/>
+                                <constraint firstAttribute="bottom" secondItem="l2r-4Z-JhD" secondAttribute="bottom" id="xXY-gE-PYY"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tkd-eb-Ne2">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="i1d-KT-8Pr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="T9K-5q-oPI" secondAttribute="trailing" id="515-1F-BA3"/>
+                        <constraint firstItem="Tkd-eb-Ne2" firstAttribute="leading" secondItem="56B-8H-CMf" secondAttribute="leading" id="63U-nE-1Iw"/>
+                        <constraint firstAttribute="trailing" secondItem="hC7-mP-HCj" secondAttribute="trailing" id="FOH-C8-nEA"/>
+                        <constraint firstItem="9qo-se-3Cj" firstAttribute="height" secondItem="T9K-5q-oPI" secondAttribute="height" id="K4R-3i-JYr"/>
+                        <constraint firstItem="9qo-se-3Cj" firstAttribute="leading" secondItem="56B-8H-CMf" secondAttribute="leading" id="KU4-4F-lEX"/>
+                        <constraint firstAttribute="trailing" secondItem="Tkd-eb-Ne2" secondAttribute="trailing" id="L0E-v1-mx4"/>
+                        <constraint firstItem="cTO-L7-yO6" firstAttribute="leading" secondItem="56B-8H-CMf" secondAttribute="leading" id="Qjx-TI-SkX"/>
+                        <constraint firstAttribute="trailing" secondItem="9qo-se-3Cj" secondAttribute="trailing" id="VAB-3t-Ih6"/>
+                        <constraint firstItem="Tkd-eb-Ne2" firstAttribute="top" secondItem="56B-8H-CMf" secondAttribute="top" id="WEQ-Rg-9RA"/>
+                        <constraint firstItem="cTO-L7-yO6" firstAttribute="top" secondItem="hC7-mP-HCj" secondAttribute="bottom" id="bNI-LC-gUN"/>
+                        <constraint firstItem="9qo-se-3Cj" firstAttribute="top" secondItem="T9K-5q-oPI" secondAttribute="bottom" id="cOt-UQ-qY2"/>
+                        <constraint firstItem="9qo-se-3Cj" firstAttribute="height" secondItem="cTO-L7-yO6" secondAttribute="height" id="ffL-i0-PwG"/>
+                        <constraint firstAttribute="trailing" secondItem="cTO-L7-yO6" secondAttribute="trailing" id="gSm-9O-EH6"/>
+                        <constraint firstItem="T9K-5q-oPI" firstAttribute="top" secondItem="cTO-L7-yO6" secondAttribute="bottom" id="hYT-JQ-pM8"/>
+                        <constraint firstItem="hC7-mP-HCj" firstAttribute="leading" secondItem="56B-8H-CMf" secondAttribute="leading" id="oxs-IY-RhN"/>
+                        <constraint firstItem="T9K-5q-oPI" firstAttribute="leading" secondItem="56B-8H-CMf" secondAttribute="leading" id="qHJ-oI-IMI"/>
+                        <constraint firstItem="9qo-se-3Cj" firstAttribute="height" secondItem="hC7-mP-HCj" secondAttribute="height" id="tcL-6m-7gf"/>
+                        <constraint firstItem="hC7-mP-HCj" firstAttribute="top" secondItem="56B-8H-CMf" secondAttribute="top" id="uow-24-8C3"/>
+                        <constraint firstAttribute="bottom" secondItem="9qo-se-3Cj" secondAttribute="bottom" id="zVH-xT-cMd"/>
+                    </constraints>
+                </view>
+                <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmJ-LY-FEC">
+                    <rect key="frame" x="0.0" y="260" width="320" height="65"/>
+                    <subviews>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIl-wH-ZEu">
+                            <rect key="frame" x="0.0" y="0.0" width="106.5" height="65"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="addAddressButtom:" destination="Vca-HK-581" eventType="touchUpInside" id="hc7-2g-axD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00x-fi-Afv">
+                            <rect key="frame" x="106.5" y="0.0" width="107" height="65"/>
+                            <state key="normal" image="call_icon.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted" image="call_icon_on.png"/>
+                            <connections>
+                                <action selector="onClickCallButton:" destination="Vca-HK-581" eventType="touchUpInside" id="P5N-DD-b6B"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myl-aO-ZC8">
+                            <rect key="frame" x="213.5" y="0.0" width="106.5" height="65"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted" image="delete_icon_on.png"/>
+                            <connections>
+                                <action selector="onClickDelButton:" destination="Vca-HK-581" eventType="touchUpInside" id="64H-Qh-JDx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="00x-fi-Afv" firstAttribute="leading" secondItem="LIl-wH-ZEu" secondAttribute="trailing" id="0qq-4j-5Pe"/>
+                        <constraint firstAttribute="bottom" secondItem="00x-fi-Afv" secondAttribute="bottom" id="G4d-z2-a9n"/>
+                        <constraint firstItem="LIl-wH-ZEu" firstAttribute="leading" secondItem="PmJ-LY-FEC" secondAttribute="leading" id="ODU-OS-gwm"/>
+                        <constraint firstAttribute="bottom" secondItem="LIl-wH-ZEu" secondAttribute="bottom" id="OYM-b4-sZD"/>
+                        <constraint firstAttribute="trailing" secondItem="Myl-aO-ZC8" secondAttribute="trailing" id="PgR-OY-ObL"/>
+                        <constraint firstItem="LIl-wH-ZEu" firstAttribute="top" secondItem="PmJ-LY-FEC" secondAttribute="top" id="TDs-1i-Jn4"/>
+                        <constraint firstItem="Myl-aO-ZC8" firstAttribute="width" secondItem="00x-fi-Afv" secondAttribute="width" id="YBN-aw-69T"/>
+                        <constraint firstAttribute="bottom" secondItem="Myl-aO-ZC8" secondAttribute="bottom" id="bDf-a2-oUI"/>
+                        <constraint firstItem="Myl-aO-ZC8" firstAttribute="top" secondItem="PmJ-LY-FEC" secondAttribute="top" id="bTE-yx-4ej"/>
+                        <constraint firstItem="00x-fi-Afv" firstAttribute="top" secondItem="PmJ-LY-FEC" secondAttribute="top" id="diw-VM-2nV"/>
+                        <constraint firstItem="Myl-aO-ZC8" firstAttribute="width" secondItem="LIl-wH-ZEu" secondAttribute="width" id="e2x-06-VDx"/>
+                        <constraint firstItem="Myl-aO-ZC8" firstAttribute="leading" secondItem="00x-fi-Afv" secondAttribute="trailing" id="mgc-9t-KhA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PmJ-LY-FEC" firstAttribute="top" secondItem="56B-8H-CMf" secondAttribute="bottom" id="4fq-RZ-Vvf"/>
+                <constraint firstItem="PmJ-LY-FEC" firstAttribute="height" secondItem="56B-8H-CMf" secondAttribute="height" multiplier="0.25" id="Mgb-3i-H1g"/>
+                <constraint firstAttribute="bottom" secondItem="PmJ-LY-FEC" secondAttribute="bottom" constant="20" id="OIV-dD-Eqy"/>
+                <constraint firstItem="56B-8H-CMf" firstAttribute="leading" secondItem="Vca-HK-581" secondAttribute="leading" id="Plh-sv-0Dv"/>
+                <constraint firstItem="56B-8H-CMf" firstAttribute="top" secondItem="Vca-HK-581" secondAttribute="top" id="Ygj-wL-Beh"/>
+                <constraint firstItem="PmJ-LY-FEC" firstAttribute="leading" secondItem="Vca-HK-581" secondAttribute="leading" id="awA-jO-Y3F"/>
+                <constraint firstAttribute="trailing" secondItem="PmJ-LY-FEC" secondAttribute="trailing" id="dOd-Jf-Ta0"/>
+                <constraint firstAttribute="trailing" secondItem="56B-8H-CMf" secondAttribute="trailing" id="ptX-QO-dXJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addAddressBtn" destination="LIl-wH-ZEu" id="edo-cs-ysk"/>
+                <outlet property="callButton" destination="00x-fi-Afv" id="c5E-Ff-VWx"/>
+                <outletCollection property="keyButtons" destination="2Z0-4a-Vh2" id="uwy-9g-PnS"/>
+                <outletCollection property="keyButtons" destination="9I9-4a-J4r" id="Y0r-VJ-6yi"/>
+                <outletCollection property="keyButtons" destination="7YA-5e-f2A" id="KCd-qm-CXl"/>
+                <outletCollection property="keyButtons" destination="JHW-Es-iuk" id="G07-RN-iQV"/>
+                <outletCollection property="keyButtons" destination="jJj-Dz-Yyt" id="j29-sW-Qrx"/>
+                <outletCollection property="keyButtons" destination="Enq-RE-r32" id="1Z5-R0-8bw"/>
+                <outletCollection property="keyButtons" destination="Eoq-sF-VxE" id="iYG-0z-cDM"/>
+                <outletCollection property="keyButtons" destination="czH-am-ORJ" id="rDp-QS-lhQ"/>
+                <outletCollection property="keyButtons" destination="9d6-UH-MOK" id="Be5-e0-p5L"/>
+                <outletCollection property="keyButtons" destination="EjK-iv-Ven" id="JaG-78-0n0"/>
+                <outletCollection property="keyButtons" destination="l2r-4Z-JhD" id="its-bE-R8c"/>
+                <outletCollection property="keyButtons" destination="EMK-K1-yxD" id="VxT-JP-2rK"/>
+            </connections>
+            <point key="canvasLocation" x="5" y="-0.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="call_icon.png" width="65" height="65"/>
+        <image name="call_icon_on.png" width="65" height="65"/>
+        <image name="delete_icon_on.png" width="125" height="48"/>
+        <image name="keyboard_01.png" width="65" height="65"/>
+        <image name="keyboard_01_on.png" width="65" height="65"/>
+        <image name="keyboard_02.png" width="65" height="65"/>
+        <image name="keyboard_02_on.png" width="65" height="65"/>
+        <image name="keyboard_03.png" width="65" height="65"/>
+        <image name="keyboard_03_on.png" width="65" height="65"/>
+        <image name="keyboard_04.png" width="65" height="65"/>
+        <image name="keyboard_04_on.png" width="65" height="65"/>
+        <image name="keyboard_05.png" width="65" height="65"/>
+        <image name="keyboard_05_on.png" width="65" height="65"/>
+        <image name="keyboard_06.png" width="65" height="65"/>
+        <image name="keyboard_06_on.png" width="65" height="65"/>
+        <image name="keyboard_07.png" width="65" height="65"/>
+        <image name="keyboard_07_on.png" width="65" height="65"/>
+        <image name="keyboard_08.png" width="65" height="65"/>
+        <image name="keyboard_08_on.png" width="65" height="65"/>
+        <image name="keyboard_09.png" width="65" height="65"/>
+        <image name="keyboard_09_on.png" width="65" height="65"/>
+        <image name="keyboard_10.png" width="65" height="65"/>
+        <image name="keyboard_10_on.png" width="65" height="65"/>
+        <image name="keyboard_11.png" width="65" height="65"/>
+        <image name="keyboard_11_on.png" width="65" height="65"/>
+        <image name="keyboard_12.png" width="65" height="65"/>
+        <image name="keyboard_12_on.png" width="65" height="65"/>
+    </resources>
+</document>

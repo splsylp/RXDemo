@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RXDeptSelectTableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="RXDeptSelectTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOM-Vy-29D">
+                        <rect key="frame" x="18" y="15" width="235" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQl-fx-7tr">
+                        <rect key="frame" x="263" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="hfL-Ma-MJb"/>
+                            <constraint firstAttribute="width" constant="40" id="vMj-hy-X6h"/>
+                        </constraints>
+                        <state key="normal" image="choose_icon.png">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" image="choose_icon_on.png"/>
+                        <connections>
+                            <action selector="actionHandle:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hFg-Ja-PUY"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enter_icon_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="8uF-Sy-bru">
+                        <rect key="frame" x="293" y="18" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="4Tn-xK-oek"/>
+                            <constraint firstAttribute="width" constant="14" id="NhI-gk-kEk"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="MQl-fx-7tr" secondAttribute="trailing" constant="1" id="0eP-Fr-SPv"/>
+                    <constraint firstItem="AOM-Vy-29D" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2H9-c2-nSX"/>
+                    <constraint firstItem="MQl-fx-7tr" firstAttribute="leading" secondItem="AOM-Vy-29D" secondAttribute="trailing" constant="10" id="Bh7-qj-c9S"/>
+                    <constraint firstItem="MQl-fx-7tr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EmA-hv-Yw1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8uF-Sy-bru" secondAttribute="trailing" constant="-3" id="PC3-AO-X8D"/>
+                    <constraint firstItem="8uF-Sy-bru" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dDK-oE-h4K"/>
+                    <constraint firstItem="AOM-Vy-29D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="sfw-tL-SUw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deptLab" destination="AOM-Vy-29D" id="v7S-ZO-2ea"/>
+                <outlet property="enterImageV" destination="8uF-Sy-bru" id="8OK-j1-W9N"/>
+                <outlet property="selectDept" destination="MQl-fx-7tr" id="pEk-Tq-WCW"/>
+            </connections>
+            <point key="canvasLocation" x="387" y="227"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="choose_icon.png" width="22" height="22"/>
+        <image name="choose_icon_on.png" width="16" height="16"/>
+        <image name="enter_icon_02.png" width="16" height="16"/>
+    </resources>
+</document>

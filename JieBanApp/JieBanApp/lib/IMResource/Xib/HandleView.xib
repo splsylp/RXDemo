@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="huL-jV-MSN" customClass="HandleView">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bez-2K-l7Z">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="MQq-1f-4xy"/>
+                        <constraint firstAttribute="height" constant="40" id="bHb-yk-yf6"/>
+                    </constraints>
+                    <state key="normal" image="recall.png"/>
+                    <connections>
+                        <action selector="handleButtonClick:" destination="huL-jV-MSN" eventType="touchUpInside" id="KyV-1w-lrD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aQ-p8-FHH">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="aqW-06-QEI"/>
+                        <constraint firstAttribute="width" constant="40" id="mmX-Qi-jVj"/>
+                    </constraints>
+                    <state key="normal" image="forward.png"/>
+                    <connections>
+                        <action selector="handleButtonClick:" destination="huL-jV-MSN" eventType="touchUpInside" id="KbJ-hJ-6G2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8aQ-p8-FHH" secondAttribute="bottom" constant="20" id="fh7-te-WMc"/>
+                <constraint firstItem="Bez-2K-l7Z" firstAttribute="leading" secondItem="huL-jV-MSN" secondAttribute="leading" constant="10" id="jhF-Qx-QW6"/>
+                <constraint firstAttribute="trailing" secondItem="8aQ-p8-FHH" secondAttribute="trailing" constant="10" id="oMn-Yu-S1i"/>
+                <constraint firstItem="Bez-2K-l7Z" firstAttribute="top" secondItem="huL-jV-MSN" secondAttribute="top" constant="10" id="qPu-1X-DXI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1177" y="450"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="forward.png" width="70" height="70"/>
+        <image name="recall.png" width="70" height="70"/>
+    </resources>
+</document>

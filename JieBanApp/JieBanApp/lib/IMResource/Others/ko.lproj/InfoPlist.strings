@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+  rongxin
+
+  Created by 杨大为 on 2017/12/28.
+  Copyright © 2017年 ronglian. All rights reserved.
+*/
+"NSContactsUsageDescription"="我们将使用您的通讯录为您提供获取手机联系人信息服务";
+"NSMicrophoneUsageDescription" = "我们将使用您的麦克风为您提供语音服务";
+"NSPhotoLibraryUsageDescription" ="我们将使用您的相册为您提供照片读取和存入服务";
+"NSCameraUsageDescription" ="我们将使用您的相机为您提供拍照服务";
+"NSLocationAlwaysUsageDescription" ="我们将使用您的位置为您提供就近咨询和信息服务";
+"NSLocationWhenInUseUsageDescription"="我们将使用您的位置为您提供就近咨询和信息服务息";
+"NSLocationAlwaysAndWhenInUseUsageDescription" ="我们将使用您的位置为您提供就近咨询和信息服务";
+"CFBundleDisplayName"="捷办";

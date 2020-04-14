@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tWB-vy-eCU" customClass="UserCell1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tWB-vy-eCU" id="aPA-fE-AmZ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kWv-do-Cbb">
+                        <rect key="frame" x="15" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="P8b-eI-kgb"/>
+                            <constraint firstAttribute="width" constant="20" id="qy3-eB-Vld"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awu-qC-y4n">
+                        <rect key="frame" x="50" y="12.5" width="229" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="msa-Ba-x5f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fC3-0Y-jyP" userLabel="Line View">
+                        <rect key="frame" x="15" y="48.5" width="290" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="lxT-uQ-Luj"/>
+                        </constraints>
+                    </view>
+                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enter_icon_02" translatesAutoresizingMaskIntoConstraints="NO" id="IHF-hC-feO">
+                        <rect key="frame" x="294" y="18.5" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="m3O-PK-dU7"/>
+                            <constraint firstAttribute="height" constant="13" id="xHO-sl-YvJ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="IHF-hC-feO" secondAttribute="trailing" constant="13" id="9nr-Dp-C9e"/>
+                    <constraint firstItem="IHF-hC-feO" firstAttribute="centerY" secondItem="aPA-fE-AmZ" secondAttribute="centerY" id="CTf-V8-geP"/>
+                    <constraint firstAttribute="bottom" secondItem="fC3-0Y-jyP" secondAttribute="bottom" id="E6Y-98-wDk"/>
+                    <constraint firstItem="kWv-do-Cbb" firstAttribute="leading" secondItem="aPA-fE-AmZ" secondAttribute="leading" constant="15" id="JVD-Hk-NhM"/>
+                    <constraint firstItem="kWv-do-Cbb" firstAttribute="centerY" secondItem="aPA-fE-AmZ" secondAttribute="centerY" id="LFd-Vc-cfP"/>
+                    <constraint firstItem="awu-qC-y4n" firstAttribute="leading" secondItem="kWv-do-Cbb" secondAttribute="trailing" constant="15" id="ObE-cY-DLn"/>
+                    <constraint firstItem="IHF-hC-feO" firstAttribute="leading" secondItem="awu-qC-y4n" secondAttribute="trailing" constant="15" id="fqY-vE-mLM"/>
+                    <constraint firstItem="awu-qC-y4n" firstAttribute="centerY" secondItem="aPA-fE-AmZ" secondAttribute="centerY" id="nnr-ry-hY7"/>
+                    <constraint firstItem="fC3-0Y-jyP" firstAttribute="leading" secondItem="aPA-fE-AmZ" secondAttribute="leading" constant="15" id="o4l-e4-7AO"/>
+                    <constraint firstAttribute="trailing" secondItem="fC3-0Y-jyP" secondAttribute="trailing" constant="15" id="yOM-yp-aHH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="hjg-XP-IsI"/>
+            <connections>
+                <outlet property="enterImageV" destination="IHF-hC-feO" id="nkN-b7-ufn"/>
+                <outlet property="formerImage" destination="kWv-do-Cbb" id="ACq-Ir-jG6"/>
+                <outlet property="latterLabel" destination="awu-qC-y4n" id="yEc-jq-7Ue"/>
+            </connections>
+            <point key="canvasLocation" x="-102" y="12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="enter_icon_02" width="16" height="16"/>
+    </resources>
+</document>

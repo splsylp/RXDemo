@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="59" id="KGk-i7-Jjw" customClass="YHCConfRemarkListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9I-bZ-OXI">
+                        <rect key="frame" x="20" y="58" width="300" height="0.5"/>
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="lX7-we-nQ1"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DKp-yL-eVg">
+                        <rect key="frame" x="20" y="11" width="37" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37" id="lVJ-lf-KDM"/>
+                            <constraint firstAttribute="height" constant="37" id="xNd-PP-HkK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REN-Ev-Kf6">
+                        <rect key="frame" x="67" y="11" width="188" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="p4t-PT-HMr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVa-WL-eTV">
+                        <rect key="frame" x="260" y="4.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="E6w-FQ-uao"/>
+                            <constraint firstAttribute="height" constant="50" id="POY-0f-eGJ"/>
+                        </constraints>
+                        <state key="normal" image="yhc_cloud_unselect.png"/>
+                        <state key="disabled" image="yhc_disable_selectb.png"/>
+                        <state key="selected" image="yhc_cloud_select.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHx-0a-VQy">
+                        <rect key="frame" x="67" y="33" width="188" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Kc7-er-oSa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZVa-WL-eTV" firstAttribute="leading" secondItem="REN-Ev-Kf6" secondAttribute="trailing" constant="5" id="0PU-NA-U7Z"/>
+                    <constraint firstItem="REN-Ev-Kf6" firstAttribute="leading" secondItem="DKp-yL-eVg" secondAttribute="trailing" constant="10" id="Bki-sq-krv"/>
+                    <constraint firstItem="i9I-bZ-OXI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="CYZ-cq-UA9"/>
+                    <constraint firstItem="DKp-yL-eVg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="CfO-JN-WFR"/>
+                    <constraint firstAttribute="trailing" secondItem="ZVa-WL-eTV" secondAttribute="trailing" constant="10" id="Lqb-4I-oFS"/>
+                    <constraint firstItem="ZVa-WL-eTV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Oo6-KU-pZ1"/>
+                    <constraint firstAttribute="trailing" secondItem="i9I-bZ-OXI" secondAttribute="trailing" id="ZhT-ds-cSJ"/>
+                    <constraint firstItem="ZVa-WL-eTV" firstAttribute="leading" secondItem="LHx-0a-VQy" secondAttribute="trailing" constant="5" id="cFL-ie-l3F"/>
+                    <constraint firstItem="LHx-0a-VQy" firstAttribute="top" secondItem="REN-Ev-Kf6" secondAttribute="bottom" constant="3" id="moN-XM-ruB"/>
+                    <constraint firstAttribute="bottom" secondItem="i9I-bZ-OXI" secondAttribute="bottom" id="nvS-Cl-oDE"/>
+                    <constraint firstItem="REN-Ev-Kf6" firstAttribute="top" secondItem="DKp-yL-eVg" secondAttribute="top" id="ru4-Dw-9kY"/>
+                    <constraint firstItem="DKp-yL-eVg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="smj-Oq-v8H"/>
+                    <constraint firstItem="LHx-0a-VQy" firstAttribute="leading" secondItem="DKp-yL-eVg" secondAttribute="trailing" constant="10" id="tzQ-UF-7uO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chooseBtn" destination="ZVa-WL-eTV" id="0f5-fD-g70"/>
+                <outlet property="contentLabel" destination="LHx-0a-VQy" id="322-WM-7jv"/>
+                <outlet property="headerImageView" destination="DKp-yL-eVg" id="E2m-YO-Qhg"/>
+                <outlet property="nameLabel" destination="REN-Ev-Kf6" id="szj-ZT-XGx"/>
+            </connections>
+            <point key="canvasLocation" x="44" y="111.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yhc_cloud_select.png" width="24" height="24"/>
+        <image name="yhc_cloud_unselect.png" width="24" height="24"/>
+        <image name="yhc_disable_selectb.png" width="22" height="22"/>
+    </resources>
+</document>

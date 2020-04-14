@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YHCOnConfMemberListViewController">
+            <connections>
+                <outlet property="allChatBtnWidth" destination="BeG-C7-vTu" id="Yil-UA-fi5"/>
+                <outlet property="allMuteBtn" destination="K21-LK-oN1" id="yDk-3M-PRO"/>
+                <outlet property="allMuteBtnWidth" destination="jpS-Pn-peH" id="ZfR-Me-eFc"/>
+                <outlet property="allOpenBtn" destination="Y8g-Ii-nj2" id="vDl-bf-KQ9"/>
+                <outlet property="allOpenBtnWidth" destination="Ytk-ih-TGm" id="J1m-D4-q6x"/>
+                <outlet property="bottomHeightLayout" destination="ySU-76-P6m" id="HbA-b8-OHR"/>
+                <outlet property="bottomViewBottomLayout" destination="XNk-dx-KDi" id="W2u-Nl-bYi"/>
+                <outlet property="chatBtn" destination="vZb-dS-FG2" id="t9I-Yn-cJs"/>
+                <outlet property="tableView" destination="dKK-FM-7dK" id="v7u-Pq-o4u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dKK-FM-7dK" customClass="YHCBaseTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="612.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4Xn-Cv-8zg"/>
+                        <outlet property="delegate" destination="-1" id="4Am-DS-dsc"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Taj-Hn-qOu">
+                    <rect key="frame" x="0.0" y="613.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.65098039215686276" green="0.70980392156862748" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="uFz-UY-ibb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Io5-NO-yuB">
+                    <rect key="frame" x="0.0" y="614" width="375" height="53"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8g-Ii-nj2">
+                            <rect key="frame" x="121" y="12" width="120" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="4fj-Eu-slo"/>
+                                <constraint firstAttribute="width" constant="120" id="Ytk-ih-TGm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
+                            <state key="normal" title="解除全体静音" image="yhc_onCofList_allOpen.png">
+                                <color key="titleColor" red="0.17254901960784313" green="0.70196078431372544" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="allOpenAciton:" destination="-1" eventType="touchUpInside" id="H9Z-Lf-GF7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K21-LK-oN1">
+                            <rect key="frame" x="261" y="12.5" width="94" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="6oG-Mi-ibg"/>
+                                <constraint firstAttribute="width" constant="94" id="jpS-Pn-peH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
+                            <state key="normal" title="全体静音" image="yhc_onCofList_allMute.png">
+                                <color key="titleColor" red="1" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="allMuteBtn:" destination="-1" eventType="touchUpInside" id="7Fq-4U-AS5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZb-dS-FG2">
+                            <rect key="frame" x="20" y="13" width="75" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="0oE-rx-zGy"/>
+                                <constraint firstAttribute="width" constant="75" id="BeG-C7-vTu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
+                            <state key="normal" title="聊天" image="yhc_conference_chaticon.png">
+                                <color key="titleColor" red="0.2196078431372549" green="0.62745098039215685" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickChatBtn:" destination="-1" eventType="touchUpInside" id="vtE-e5-ghC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="K21-LK-oN1" firstAttribute="leading" secondItem="Y8g-Ii-nj2" secondAttribute="trailing" constant="20" id="7XQ-r0-FQo"/>
+                        <constraint firstItem="Y8g-Ii-nj2" firstAttribute="top" secondItem="Io5-NO-yuB" secondAttribute="top" constant="12.5" id="S44-c9-ekM"/>
+                        <constraint firstItem="K21-LK-oN1" firstAttribute="top" secondItem="Io5-NO-yuB" secondAttribute="top" constant="12.5" id="SXX-Sq-4L5"/>
+                        <constraint firstAttribute="trailing" secondItem="K21-LK-oN1" secondAttribute="trailing" constant="20" id="YBO-cb-yeu"/>
+                        <constraint firstItem="vZb-dS-FG2" firstAttribute="leading" secondItem="Io5-NO-yuB" secondAttribute="leading" constant="20" id="dYS-8T-t0N"/>
+                        <constraint firstItem="vZb-dS-FG2" firstAttribute="centerY" secondItem="Y8g-Ii-nj2" secondAttribute="centerY" constant="1" id="ecP-wu-QPe"/>
+                        <constraint firstAttribute="height" constant="53" id="ySU-76-P6m"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Taj-Hn-qOu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4w5-1i-4Z7"/>
+                <constraint firstItem="dKK-FM-7dK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7Fd-fP-gcD"/>
+                <constraint firstItem="Io5-NO-yuB" firstAttribute="top" secondItem="Taj-Hn-qOu" secondAttribute="bottom" id="HYW-Jy-uRZ"/>
+                <constraint firstAttribute="trailing" secondItem="Io5-NO-yuB" secondAttribute="trailing" id="I28-GJ-1Gv"/>
+                <constraint firstItem="Io5-NO-yuB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MYw-1c-yhE"/>
+                <constraint firstAttribute="bottom" secondItem="Io5-NO-yuB" secondAttribute="bottom" id="XNk-dx-KDi"/>
+                <constraint firstItem="Taj-Hn-qOu" firstAttribute="top" secondItem="dKK-FM-7dK" secondAttribute="bottom" constant="1" id="Y8T-5S-TiD"/>
+                <constraint firstAttribute="trailing" secondItem="Taj-Hn-qOu" secondAttribute="trailing" id="ez5-cj-5Sj"/>
+                <constraint firstItem="dKK-FM-7dK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m8U-TU-2av"/>
+                <constraint firstAttribute="trailing" secondItem="dKK-FM-7dK" secondAttribute="trailing" id="moK-jD-B52"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="yhc_conference_chaticon.png" width="12" height="12"/>
+        <image name="yhc_onCofList_allMute.png" width="8" height="9"/>
+        <image name="yhc_onCofList_allOpen.png" width="8" height="9"/>
+    </resources>
+</document>

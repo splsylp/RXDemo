@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VoipViewController">
+            <connections>
+                <outlet property="loginedTipLabel" destination="MWv-Ni-g35" id="ZpO-LN-A2S"/>
+                <outlet property="otherPhoneNumTextField" destination="HC4-M3-DNs" id="SDA-SO-wbY"/>
+                <outlet property="telBtn" destination="WhB-Pr-vRQ" id="xvN-0M-jdm"/>
+                <outlet property="videoBtn" destination="udT-GX-2t2" id="j1U-Zg-GsE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voiceBtn" destination="lUL-gK-2lO" id="gy1-CT-m1Q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWv-Ni-g35">
+                    <rect key="frame" x="20" y="64" width="76.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhB-Pr-vRQ">
+                    <rect key="frame" x="147" y="174" width="120" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="21E-HZ-u0r"/>
+                        <constraint firstAttribute="width" constant="120" id="oF0-ma-haU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="直拨电话">
+                        <color key="titleColor" red="0.28412160279999998" green="0.79737204309999998" blue="0.51257532839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udT-GX-2t2">
+                    <rect key="frame" x="147" y="334" width="120" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="AZn-y5-BTF"/>
+                        <constraint firstAttribute="width" constant="120" id="t6p-mD-drN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="视频电话">
+                        <color key="titleColor" red="0.28412160279999998" green="0.79737204309999998" blue="0.51257532839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUL-gK-2lO">
+                    <rect key="frame" x="147" y="254" width="120" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="2ZV-fd-kbd"/>
+                        <constraint firstAttribute="height" constant="40" id="WEm-FC-cZA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="语音电话">
+                        <color key="titleColor" red="0.28412160279999998" green="0.79737204309999998" blue="0.51257532839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入对方电话号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HC4-M3-DNs">
+                    <rect key="frame" x="40" y="104" width="334" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="VKh-n1-ROP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WhB-Pr-vRQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3wc-gs-uEO"/>
+                <constraint firstItem="udT-GX-2t2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5li-dO-3gT"/>
+                <constraint firstItem="YXx-Lc-6qi" firstAttribute="trailing" secondItem="HC4-M3-DNs" secondAttribute="trailing" constant="40" id="UCP-eG-B32"/>
+                <constraint firstItem="WhB-Pr-vRQ" firstAttribute="top" secondItem="YXx-Lc-6qi" secondAttribute="top" constant="130" id="a8g-OO-N8R"/>
+                <constraint firstItem="lUL-gK-2lO" firstAttribute="top" secondItem="WhB-Pr-vRQ" secondAttribute="bottom" constant="40" id="atA-fO-MUD"/>
+                <constraint firstItem="HC4-M3-DNs" firstAttribute="leading" secondItem="YXx-Lc-6qi" secondAttribute="leading" constant="40" id="chn-MN-2EX"/>
+                <constraint firstItem="lUL-gK-2lO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jhT-aD-qQT"/>
+                <constraint firstItem="HC4-M3-DNs" firstAttribute="top" secondItem="YXx-Lc-6qi" secondAttribute="top" constant="60" id="jqh-Ny-qsh"/>
+                <constraint firstItem="MWv-Ni-g35" firstAttribute="top" secondItem="YXx-Lc-6qi" secondAttribute="top" constant="20" id="ktf-Cg-PCG"/>
+                <constraint firstItem="MWv-Ni-g35" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="uDM-98-bIX"/>
+                <constraint firstItem="udT-GX-2t2" firstAttribute="top" secondItem="lUL-gK-2lO" secondAttribute="bottom" constant="40" id="vR9-80-g60"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="YXx-Lc-6qi"/>
+            <point key="canvasLocation" x="139" y="84"/>
+        </view>
+    </objects>
+</document>

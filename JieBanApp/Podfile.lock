@@ -1,0 +1,165 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AMapFoundation (1.6.3)
+  - AMapSearch (7.3.0):
+    - AMapFoundation (~> 1.6.3)
+  - Bugly (2.5.2)
+  - DateTools (2.0.0)
+  - FLAnimatedImage (1.0.12)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - FSCalendar (2.8.1)
+  - GTMBase64 (1.0.1)
+  - KVOController (1.2.0)
+  - Masonry (1.1.0)
+  - MJRefresh (3.3.1)
+  - PFAudioLib (0.1.4)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - RegexKitLite (4.0)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/GIF (4.4.8):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - SGQRCode (3.0.1)
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - SSZipArchive (2.2.2)
+  - SVProgressHUD (2.2.5)
+  - SVPullToRefresh (0.4.1)
+  - UINavigation-SXFixSpace (1.2.4)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+  - WCDB (1.0.7.5):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
+  - YuntxIMLib (5.5.1):
+    - YuntxIMLib/board (= 5.5.1)
+    - YuntxIMLib/Delegate (= 5.5.1)
+    - YuntxIMLib/enums (= 5.5.1)
+    - YuntxIMLib/Manager (= 5.5.1)
+    - YuntxIMLib/private (= 5.5.1)
+    - YuntxIMLib/types (= 5.5.1)
+  - YuntxIMLib/board (5.5.1)
+  - YuntxIMLib/Delegate (5.5.1)
+  - YuntxIMLib/enums (5.5.1)
+  - YuntxIMLib/Manager (5.5.1)
+  - YuntxIMLib/private (5.5.1)
+  - YuntxIMLib/types (5.5.1):
+    - YuntxIMLib/types/LiveChatRoomType (= 5.5.1)
+  - YuntxIMLib/types/LiveChatRoomType (5.5.1)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (= 3.1.0)
+  - AMapFoundation
+  - AMapSearch
+  - Bugly
+  - DateTools
+  - FLAnimatedImage
+  - FMDB
+  - FSCalendar
+  - GTMBase64
+  - KVOController
+  - Masonry
+  - MJRefresh
+  - PFAudioLib
+  - ReactiveCocoa (= 2.5)
+  - RegexKitLite
+  - SDWebImage
+  - SDWebImage/GIF
+  - SGQRCode (~> 3.0.1)
+  - SQLiteRepairKit
+  - SSZipArchive
+  - SVProgressHUD
+  - SVPullToRefresh
+  - UINavigation-SXFixSpace
+  - "UITableView+FDTemplateLayoutCell"
+  - WCDB (= 1.0.7.5)
+  - YuntxIMLib (= 5.5.1)
+  - YYModel
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - AMapFoundation
+    - AMapSearch
+    - Bugly
+    - DateTools
+    - FLAnimatedImage
+    - FMDB
+    - FSCalendar
+    - GTMBase64
+    - KVOController
+    - Masonry
+    - MJRefresh
+    - PFAudioLib
+    - ReactiveCocoa
+    - RegexKitLite
+    - SDWebImage
+    - SGQRCode
+    - SQLiteRepairKit
+    - SSZipArchive
+    - SVProgressHUD
+    - SVPullToRefresh
+    - UINavigation-SXFixSpace
+    - "UITableView+FDTemplateLayoutCell"
+    - WCDB
+    - WCDBOptimizedSQLCipher
+    - YuntxIMLib
+    - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AMapFoundation: 9ed923193b357ebb30a073e9fe255d3c24054d5a
+  AMapSearch: a048bcca3bf0b8083345070e1f193f814bd8dc01
+  Bugly: dbac48b55ad469a97cc4321045cd50df8f63d44f
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  PFAudioLib: f173172ffc04787d261259e1e0bd5d6447e2a273
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SGQRCode: bf02d60e18d6660a9d75ff1c8b9b467f064f054e
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  UINavigation-SXFixSpace: 10f223253ebff2ceefa26694e23b7694269763c4
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
+  YuntxIMLib: 91ac6fa88360eaaf9cf6015b08d04a246481ba13
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 80c5e6992a337510046ddba63f7a09f7a466b487
+
+COCOAPODS: 1.9.1

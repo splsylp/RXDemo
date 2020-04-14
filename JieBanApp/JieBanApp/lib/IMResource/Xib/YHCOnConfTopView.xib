@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YHCOnConfTopView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-V5-sn7" customClass="YHCOnConfTopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq3-s8-dXY">
+                    <rect key="frame" x="290" y="27" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="A8g-ZZ-LSw"/>
+                        <constraint firstAttribute="height" constant="30" id="ofA-MX-pE7"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="离开" image="yhc_conf_top_del.png">
+                        <color key="titleColor" red="1" green="0.20784313730000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="endAction:" destination="FZP-V5-sn7" eventType="touchUpInside" id="mil-Lg-W6d"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrK-ZT-qTA">
+                    <rect key="frame" x="187.5" y="22" width="0.0" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="ROZ-4s-DZU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgF-xU-7p0">
+                    <rect key="frame" x="187.5" y="47" width="0.0" height="11"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="11" id="zVm-gn-cHQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                    <color key="textColor" red="0.51372549020000002" green="0.52941176469999995" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1C-Ab-VdM">
+                    <rect key="frame" x="5" y="22" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="TvA-HE-K6I"/>
+                        <constraint firstAttribute="height" constant="40" id="fFo-Xq-ofH"/>
+                    </constraints>
+                    <state key="normal" image="yhc_conf_top_voice_on.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="yhc_conf_top_voice.png"/>
+                    <connections>
+                        <action selector="loudsSpeaker:" destination="FZP-V5-sn7" eventType="touchUpInside" id="zoM-do-wTj"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3J-SC-fSN">
+                    <rect key="frame" x="47" y="22" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="RRZ-Ic-Uup"/>
+                        <constraint firstAttribute="width" constant="40" id="wAt-Sd-bNu"/>
+                    </constraints>
+                    <state key="normal" image="yhc_conf_top_changeCamera.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeCame:" destination="FZP-V5-sn7" eventType="touchUpInside" id="rV5-Ta-W00"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.098039215690000001" green="0.1058823529" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="YgF-xU-7p0" firstAttribute="top" secondItem="ZrK-ZT-qTA" secondAttribute="bottom" id="1dR-ff-erS"/>
+                <constraint firstAttribute="trailing" secondItem="uq3-s8-dXY" secondAttribute="trailing" constant="5" id="8Xd-PP-Urn"/>
+                <constraint firstAttribute="bottom" secondItem="uq3-s8-dXY" secondAttribute="bottom" constant="7" id="CIk-L4-Kze"/>
+                <constraint firstAttribute="bottom" secondItem="Y1C-Ab-VdM" secondAttribute="bottom" constant="2" id="Dpq-mD-nvX"/>
+                <constraint firstItem="ZrK-ZT-qTA" firstAttribute="centerX" secondItem="FZP-V5-sn7" secondAttribute="centerX" id="FfN-6C-CaZ"/>
+                <constraint firstItem="YgF-xU-7p0" firstAttribute="centerX" secondItem="FZP-V5-sn7" secondAttribute="centerX" id="Gml-WA-Yu0"/>
+                <constraint firstAttribute="bottom" secondItem="A3J-SC-fSN" secondAttribute="bottom" constant="2" id="aUI-Ud-AOr"/>
+                <constraint firstItem="A3J-SC-fSN" firstAttribute="leading" secondItem="Y1C-Ab-VdM" secondAttribute="trailing" constant="2" id="cuh-Tq-a7O"/>
+                <constraint firstItem="A3J-SC-fSN" firstAttribute="leading" secondItem="Y1C-Ab-VdM" secondAttribute="trailing" constant="2" id="hV0-9v-2Op"/>
+                <constraint firstAttribute="bottom" secondItem="YgF-xU-7p0" secondAttribute="bottom" constant="6" id="hl7-A8-fIF"/>
+                <constraint firstItem="Y1C-Ab-VdM" firstAttribute="leading" secondItem="FZP-V5-sn7" secondAttribute="leading" constant="5" id="xVY-WZ-Ulc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="changeCamBtn" destination="A3J-SC-fSN" id="Vpp-p5-EJO"/>
+                <outlet property="endBtn" destination="uq3-s8-dXY" id="b0k-7J-2bO"/>
+                <outlet property="loudsSpeakerBtn" destination="Y1C-Ab-VdM" id="JLV-Vw-84T"/>
+                <outlet property="timeLabel" destination="YgF-xU-7p0" id="hw5-sC-FwB"/>
+                <outlet property="titleLabel" destination="ZrK-ZT-qTA" id="fIu-3o-MZT"/>
+            </connections>
+            <point key="canvasLocation" x="358" y="97"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="yhc_conf_top_changeCamera.png" width="22" height="22"/>
+        <image name="yhc_conf_top_del.png" width="14" height="14"/>
+        <image name="yhc_conf_top_voice.png" width="22" height="22"/>
+        <image name="yhc_conf_top_voice_on.png" width="22" height="22"/>
+    </resources>
+</document>
