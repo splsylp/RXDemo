@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YHCConfCurrentViewController">
+            <connections>
+                <outlet property="tableView" destination="eIB-sb-a9V" id="1TX-O7-7bk"/>
+                <outlet property="topBtnBottomLayout" destination="yZA-Ye-eQD" id="5CV-ba-RHI"/>
+                <outlet property="topBtnHeightLayout" destination="3Tc-mU-AIq" id="gYK-Us-Vyf"/>
+                <outlet property="topBtnRightLayout" destination="ev8-4h-CrH" id="L96-4a-z0T"/>
+                <outlet property="topBtnSpaceLayout" destination="pcm-3f-X5f" id="n4d-R2-LLU"/>
+                <outlet property="topBtnSpaceLayout2" destination="nYB-4F-RG7" id="7cU-Sp-VSu"/>
+                <outlet property="topBtnTopLayout" destination="Jd2-32-sUo" id="gWY-uf-iog"/>
+                <outlet property="topBtnWidthLayout" destination="Jwb-g0-0Sm" id="mYA-Kp-1MO"/>
+                <outlet property="topJoinBtn" destination="e69-xl-Qen" id="bVh-oa-G12"/>
+                <outlet property="topOldJoin" destination="koU-kq-dAe" id="D7O-Af-8zt"/>
+                <outlet property="topOldStart" destination="N7a-nC-E4z" id="lrf-N8-uQI"/>
+                <outlet property="topReserverBtn" destination="9ak-3y-R6t" id="Fdb-v1-HAv"/>
+                <outlet property="topStartBtn" destination="71y-fQ-nXO" id="EaY-iA-2Es"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eIB-sb-a9V" customClass="YHCBaseTableView">
+                    <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8lP-SR-OIu"/>
+                        <outlet property="delegate" destination="-1" id="jFK-ki-aFK"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71y-fQ-nXO">
+                    <rect key="frame" x="17" y="10" width="80" height="88"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="20"/>
+                    <state key="normal" image="yhc_open.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="yhc_open.png"/>
+                    <state key="highlighted" image="yhc_open.png"/>
+                    <connections>
+                        <action selector="startConfAction:" destination="-1" eventType="touchUpInside" id="S55-QA-9HO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ak-3y-R6t">
+                    <rect key="frame" x="147" y="10" width="80" height="88"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="20"/>
+                    <state key="normal" image="yhc_yy.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="yhc_yy.png"/>
+                    <connections>
+                        <action selector="reserverConfAction:" destination="-1" eventType="touchUpInside" id="cx6-UF-JeO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e69-xl-Qen">
+                    <rect key="frame" x="277" y="10" width="80" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="3Tc-mU-AIq"/>
+                        <constraint firstAttribute="width" constant="80" id="Jwb-g0-0Sm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="20"/>
+                    <state key="normal" image="yhc_join.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="yhc_join.png"/>
+                    <connections>
+                        <action selector="joinConfAction:" destination="-1" eventType="touchUpInside" id="sZw-CL-kM8"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koU-kq-dAe">
+                    <rect key="frame" x="277" y="10" width="80" height="88"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="20"/>
+                    <state key="normal" image="yhc_join.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="highlighted" image="yhc_join.png"/>
+                    <connections>
+                        <action selector="oldJoinAction:" destination="-1" eventType="touchUpInside" id="eeC-XF-YJ8"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7a-nC-E4z">
+                    <rect key="frame" x="147" y="10" width="80" height="88"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="20"/>
+                    <state key="normal" image="yhc_yy.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="highlighted" image="yhc_yy.png"/>
+                    <connections>
+                        <action selector="oldStartAction:" destination="-1" eventType="touchUpInside" id="iyI-bU-g3T"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.88627450980392153" green="0.90588235294117647" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="koU-kq-dAe" firstAttribute="centerX" secondItem="e69-xl-Qen" secondAttribute="centerX" id="0em-FF-2AY"/>
+                <constraint firstItem="koU-kq-dAe" firstAttribute="height" secondItem="e69-xl-Qen" secondAttribute="height" id="1HL-Au-DzR"/>
+                <constraint firstItem="9ak-3y-R6t" firstAttribute="width" secondItem="71y-fQ-nXO" secondAttribute="width" id="2Xa-xJ-Q3Y"/>
+                <constraint firstAttribute="bottom" secondItem="eIB-sb-a9V" secondAttribute="bottom" id="Edr-EO-NY9"/>
+                <constraint firstItem="koU-kq-dAe" firstAttribute="width" secondItem="e69-xl-Qen" secondAttribute="width" id="GeD-hr-rRN"/>
+                <constraint firstItem="e69-xl-Qen" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Jd2-32-sUo"/>
+                <constraint firstItem="N7a-nC-E4z" firstAttribute="centerY" secondItem="9ak-3y-R6t" secondAttribute="centerY" id="MjT-zP-Q41"/>
+                <constraint firstItem="N7a-nC-E4z" firstAttribute="width" secondItem="9ak-3y-R6t" secondAttribute="width" id="OPJ-Mg-W56"/>
+                <constraint firstAttribute="trailing" secondItem="eIB-sb-a9V" secondAttribute="trailing" id="cRy-62-kSl"/>
+                <constraint firstAttribute="trailing" secondItem="e69-xl-Qen" secondAttribute="trailing" constant="18" id="ev8-4h-CrH"/>
+                <constraint firstItem="e69-xl-Qen" firstAttribute="width" secondItem="71y-fQ-nXO" secondAttribute="width" id="hz8-eP-OyK"/>
+                <constraint firstItem="e69-xl-Qen" firstAttribute="height" secondItem="71y-fQ-nXO" secondAttribute="height" id="k8A-0Q-0A9"/>
+                <constraint firstItem="eIB-sb-a9V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l2O-DX-CRg"/>
+                <constraint firstItem="9ak-3y-R6t" firstAttribute="height" secondItem="71y-fQ-nXO" secondAttribute="height" id="nT7-Xk-pkR"/>
+                <constraint firstItem="e69-xl-Qen" firstAttribute="leading" secondItem="9ak-3y-R6t" secondAttribute="trailing" constant="50" id="nYB-4F-RG7"/>
+                <constraint firstItem="e69-xl-Qen" firstAttribute="centerY" secondItem="71y-fQ-nXO" secondAttribute="centerY" id="oex-Fx-xg0"/>
+                <constraint firstItem="9ak-3y-R6t" firstAttribute="leading" secondItem="71y-fQ-nXO" secondAttribute="trailing" constant="50" id="pcm-3f-X5f"/>
+                <constraint firstItem="9ak-3y-R6t" firstAttribute="centerY" secondItem="71y-fQ-nXO" secondAttribute="centerY" id="r0n-Tz-ODb"/>
+                <constraint firstItem="koU-kq-dAe" firstAttribute="centerY" secondItem="e69-xl-Qen" secondAttribute="centerY" id="rhq-fO-zaD"/>
+                <constraint firstItem="N7a-nC-E4z" firstAttribute="centerX" secondItem="9ak-3y-R6t" secondAttribute="centerX" id="rjY-0w-FjL"/>
+                <constraint firstItem="eIB-sb-a9V" firstAttribute="top" secondItem="e69-xl-Qen" secondAttribute="bottom" constant="10" id="yZA-Ye-eQD"/>
+                <constraint firstItem="N7a-nC-E4z" firstAttribute="height" secondItem="9ak-3y-R6t" secondAttribute="height" id="ygd-t2-tUC"/>
+            </constraints>
+            <point key="canvasLocation" x="-1116" y="-108.39580209895054"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="yhc_join.png" width="54.5" height="60.5"/>
+        <image name="yhc_open.png" width="54" height="61.5"/>
+        <image name="yhc_yy.png" width="54.5" height="59.5"/>
+    </resources>
+</document>

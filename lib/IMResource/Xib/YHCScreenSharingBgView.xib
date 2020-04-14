@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YHCScreenSharingBgView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="3" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tt-WM-RGm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIm-LJ-ZXW">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDj-Sr-QMH">
+                                    <rect key="frame" x="-0.5" y="192.5" width="375" height="281"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="dDj-Sr-QMH" secondAttribute="height" multiplier="4:3" id="mmZ-SC-RZV"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="dDj-Sr-QMH" firstAttribute="centerX" secondItem="NIm-LJ-ZXW" secondAttribute="centerX" id="0kz-pU-sx3"/>
+                                <constraint firstItem="dDj-Sr-QMH" firstAttribute="width" secondItem="NIm-LJ-ZXW" secondAttribute="width" id="Sk7-KQ-Nad"/>
+                                <constraint firstItem="dDj-Sr-QMH" firstAttribute="centerY" secondItem="NIm-LJ-ZXW" secondAttribute="centerY" id="gWx-eY-nUI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NIm-LJ-ZXW" secondAttribute="trailing" id="E6L-gW-Aim"/>
+                        <constraint firstItem="NIm-LJ-ZXW" firstAttribute="top" secondItem="1Tt-WM-RGm" secondAttribute="top" id="gh2-oS-Rfm"/>
+                        <constraint firstAttribute="bottom" secondItem="NIm-LJ-ZXW" secondAttribute="bottom" id="hif-PL-WEu"/>
+                        <constraint firstItem="NIm-LJ-ZXW" firstAttribute="leading" secondItem="1Tt-WM-RGm" secondAttribute="leading" id="wjw-vk-hFe"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Tt-WM-RGm" secondAttribute="trailing" id="6gX-SB-D7K"/>
+                <constraint firstItem="1Tt-WM-RGm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="L8g-YO-aVH"/>
+                <constraint firstItem="1Tt-WM-RGm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WJ3-yR-2yy"/>
+                <constraint firstItem="NIm-LJ-ZXW" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="q0z-kX-dkd"/>
+                <constraint firstItem="NIm-LJ-ZXW" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="vsq-DY-ItT"/>
+                <constraint firstAttribute="bottom" secondItem="1Tt-WM-RGm" secondAttribute="bottom" id="yu1-qh-tAs"/>
+            </constraints>
+            <connections>
+                <outlet property="scrollContentBgView" destination="NIm-LJ-ZXW" id="h4J-x3-l6O"/>
+                <outlet property="scrollview" destination="1Tt-WM-RGm" id="Uaj-5J-KZV"/>
+                <outlet property="videoView" destination="dDj-Sr-QMH" id="FC1-5m-hCI"/>
+                <outlet property="videoViewAspectCons" destination="mmZ-SC-RZV" id="1yF-g0-2eJ"/>
+                <outlet property="videoViewWidthCons" destination="Sk7-KQ-Nad" id="rQB-nw-t20"/>
+            </connections>
+        </view>
+    </objects>
+</document>

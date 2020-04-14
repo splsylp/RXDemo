@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="UE9-ZN-uKG" customClass="YHCConfButtonTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="437" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UE9-ZN-uKG" id="S4z-gN-FiX">
+                <rect key="frame" x="0.0" y="0.0" width="437" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yhc_confInfo_start_dis_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="fk9-ab-65N">
+                        <rect key="frame" x="16" y="16.5" width="421" height="130.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fk9-ab-65N" secondAttribute="height" multiplier="364:113" id="jUw-Vl-TGY"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZ9-im-hO7">
+                        <rect key="frame" x="16" y="16.5" width="421" height="83.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="cZ9-im-hO7" secondAttribute="height" multiplier="364:72" id="7Lc-0J-Fiv"/>
+                        </constraints>
+                        <inset key="titleEdgeInsets" minX="75" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="重新发起会议" backgroundImage="yh_conf_join_enter_on.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="disabled" backgroundImage="yhc_confInfo_start_dis.png"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfC-Ib-d7H">
+                        <rect key="frame" x="0.0" y="15" width="437" height="103"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk8-a9-eaI">
+                                <rect key="frame" x="0.0" y="16.5" width="183" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="RAN-m9-D43"/>
+                                    <constraint firstAttribute="width" secondItem="Hk8-a9-eaI" secondAttribute="height" multiplier="183:81" id="gcZ-5f-Zx0"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="10" minY="-15" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="-15" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="电话参会" image="yhc_confInfo_phoneIcon.png">
+                                    <color key="titleColor" red="0.12941176470588234" green="0.14509803921568626" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yhc_confInfo_start_bg_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="lEd-LM-dML">
+                                <rect key="frame" x="191" y="16.5" width="183" height="81"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpr-Rm-eNy">
+                                <rect key="frame" x="191" y="16.5" width="183" height="81"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="-15" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="-15" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="网络参会" image="yhc_confInfo_netIcon.png" backgroundImage="yhc_confInfo_start_bg.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.96470588235294119" blue="1" alpha="0.97999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qpr-Rm-eNy" firstAttribute="centerY" secondItem="Hk8-a9-eaI" secondAttribute="centerY" id="3Qe-Dm-AWN"/>
+                            <constraint firstItem="qpr-Rm-eNy" firstAttribute="height" secondItem="Hk8-a9-eaI" secondAttribute="height" id="86G-yh-2ba"/>
+                            <constraint firstItem="lEd-LM-dML" firstAttribute="width" secondItem="Hk8-a9-eaI" secondAttribute="width" id="AYB-Ab-lhC"/>
+                            <constraint firstItem="qpr-Rm-eNy" firstAttribute="leading" secondItem="Hk8-a9-eaI" secondAttribute="trailing" constant="8" id="IEX-Fl-YUH"/>
+                            <constraint firstItem="Hk8-a9-eaI" firstAttribute="top" secondItem="hfC-Ib-d7H" secondAttribute="top" constant="16.5" id="al4-ne-Ex3"/>
+                            <constraint firstItem="lEd-LM-dML" firstAttribute="leading" secondItem="Hk8-a9-eaI" secondAttribute="trailing" constant="8" id="dx1-vw-hoO"/>
+                            <constraint firstItem="lEd-LM-dML" firstAttribute="centerY" secondItem="Hk8-a9-eaI" secondAttribute="centerY" id="jDU-PJ-qzq"/>
+                            <constraint firstItem="lEd-LM-dML" firstAttribute="height" secondItem="Hk8-a9-eaI" secondAttribute="height" id="xe8-dm-CBI"/>
+                            <constraint firstItem="Hk8-a9-eaI" firstAttribute="leading" secondItem="hfC-Ib-d7H" secondAttribute="leading" id="xeo-bf-lKB"/>
+                            <constraint firstItem="qpr-Rm-eNy" firstAttribute="width" secondItem="Hk8-a9-eaI" secondAttribute="width" id="zns-5c-sIa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hfC-Ib-d7H" secondAttribute="trailing" id="AUo-PT-pSa"/>
+                    <constraint firstAttribute="trailing" secondItem="cZ9-im-hO7" secondAttribute="trailing" id="ExI-Xr-bRM"/>
+                    <constraint firstItem="hfC-Ib-d7H" firstAttribute="top" secondItem="S4z-gN-FiX" secondAttribute="top" constant="15" id="Fpc-cj-0f3"/>
+                    <constraint firstAttribute="trailing" secondItem="fk9-ab-65N" secondAttribute="trailing" id="G1K-IH-VCJ"/>
+                    <constraint firstItem="fk9-ab-65N" firstAttribute="leading" secondItem="S4z-gN-FiX" secondAttribute="leading" constant="16" id="YXK-Kx-VoL"/>
+                    <constraint firstItem="cZ9-im-hO7" firstAttribute="top" secondItem="S4z-gN-FiX" secondAttribute="top" constant="16.5" id="dwS-JB-bD9"/>
+                    <constraint firstItem="cZ9-im-hO7" firstAttribute="leading" secondItem="S4z-gN-FiX" secondAttribute="leading" constant="16" id="jnv-RA-gqm"/>
+                    <constraint firstItem="fk9-ab-65N" firstAttribute="top" secondItem="S4z-gN-FiX" secondAttribute="top" constant="16.5" id="vui-zt-hsZ"/>
+                    <constraint firstItem="hfC-Ib-d7H" firstAttribute="leading" secondItem="S4z-gN-FiX" secondAttribute="leading" id="wKJ-FQ-Rx3"/>
+                    <constraint firstAttribute="bottom" secondItem="hfC-Ib-d7H" secondAttribute="bottom" id="yWW-tQ-jZU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnBgView" destination="hfC-Ib-d7H" id="HzD-MM-qLr"/>
+                <outlet property="netBtn" destination="qpr-Rm-eNy" id="CtB-SX-Xd2"/>
+                <outlet property="phoneBtn" destination="Hk8-a9-eaI" id="SPu-cZ-g5I"/>
+                <outlet property="reStartBtn" destination="cZ9-im-hO7" id="8SX-Ro-XDv"/>
+                <outlet property="shadowView" destination="fk9-ab-65N" id="DE3-Cf-1Mm"/>
+            </connections>
+            <point key="canvasLocation" x="-17.5" y="47"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yh_conf_join_enter_on.png" width="363.5" height="72"/>
+        <image name="yhc_confInfo_netIcon.png" width="22" height="22"/>
+        <image name="yhc_confInfo_phoneIcon.png" width="22" height="22"/>
+        <image name="yhc_confInfo_start_bg.png" width="182.5" height="80.5"/>
+        <image name="yhc_confInfo_start_bg_shadow.png" width="182.5" height="80.5"/>
+        <image name="yhc_confInfo_start_dis.png" width="363.5" height="72"/>
+        <image name="yhc_confInfo_start_dis_shadow.png" width="362.5" height="112.5"/>
+    </resources>
+</document>

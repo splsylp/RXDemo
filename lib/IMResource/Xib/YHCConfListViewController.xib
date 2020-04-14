@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YHCConfListViewController">
+            <connections>
+                <outlet property="leftView" destination="Iur-1J-IJC" id="Zr3-OY-N1v"/>
+                <outlet property="mainScrollView" destination="Dl2-RD-ljX" id="6Oa-xL-1nZ"/>
+                <outlet property="rightView" destination="xOK-G1-Uac" id="TcF-TE-rAh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dl2-RD-ljX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iur-1J-IJC">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOK-G1-Uac">
+                            <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xOK-G1-Uac" firstAttribute="leading" secondItem="Iur-1J-IJC" secondAttribute="trailing" id="NHV-id-qKD"/>
+                        <constraint firstItem="Iur-1J-IJC" firstAttribute="top" secondItem="Dl2-RD-ljX" secondAttribute="top" id="S32-DG-SAL"/>
+                        <constraint firstItem="Iur-1J-IJC" firstAttribute="leading" secondItem="Dl2-RD-ljX" secondAttribute="leading" id="Sbp-J9-afF"/>
+                        <constraint firstAttribute="bottom" secondItem="xOK-G1-Uac" secondAttribute="bottom" id="XLn-8F-xqm"/>
+                        <constraint firstItem="Iur-1J-IJC" firstAttribute="centerY" secondItem="Dl2-RD-ljX" secondAttribute="centerY" id="jnX-VT-SUO"/>
+                        <constraint firstAttribute="trailing" secondItem="xOK-G1-Uac" secondAttribute="trailing" id="u3G-Jx-AZ3"/>
+                        <constraint firstItem="xOK-G1-Uac" firstAttribute="top" secondItem="Dl2-RD-ljX" secondAttribute="top" id="vdZ-ul-qMS"/>
+                        <constraint firstAttribute="bottom" secondItem="Iur-1J-IJC" secondAttribute="bottom" id="x7a-yB-oU4"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="pge-LA-7Uc"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Dl2-RD-ljX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FPH-Hd-HzF"/>
+                <constraint firstItem="Dl2-RD-ljX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ite-sn-yOd"/>
+                <constraint firstAttribute="trailing" secondItem="Dl2-RD-ljX" secondAttribute="trailing" id="Se8-2f-h4G"/>
+                <constraint firstAttribute="bottom" secondItem="Dl2-RD-ljX" secondAttribute="bottom" id="j0q-Eg-S5k"/>
+                <constraint firstItem="xOK-G1-Uac" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="k23-rL-KXe"/>
+                <constraint firstItem="Iur-1J-IJC" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="ljJ-IA-ExN"/>
+                <constraint firstItem="xOK-G1-Uac" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="qRR-5s-fgB"/>
+                <constraint firstItem="Iur-1J-IJC" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="xUm-uN-A99"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

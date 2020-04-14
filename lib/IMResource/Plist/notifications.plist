@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>cell_style</key>
+		<string>HYTCommonSwitchTableViewCell</string>
+		<key>style</key>
+		<string>new_notifications_switch</string>
+		<key>title</key>
+		<string>接收新消息通知</string>
+		<key>switch</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>cell_style</key>
+		<string>HYTCommonSwitchTableViewCell</string>
+		<key>style</key>
+		<string>sound_switch</string>
+		<key>title</key>
+		<string>声音</string>
+		<key>switch</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>cell_style</key>
+		<string>HYTCommonSwitchTableViewCell</string>
+		<key>style</key>
+		<string>shake_switch</string>
+		<key>title</key>
+		<string>振动</string>
+		<key>switch</key>
+		<true/>
+	</dict>
+</array>
+</plist>

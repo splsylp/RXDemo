@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CXv-rO-TLl" customClass="UserCenterHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="259"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-2p-N8I" userLabel="Back Image">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="243"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6cH-NP-pms" userLabel="Icon Image">
+                    <rect key="frame" x="50" y="58" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="GqA-gS-MeE"/>
+                        <constraint firstAttribute="width" constant="60" id="ySA-qC-ZZc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4P-Xz-poy" userLabel="Name Label">
+                    <rect key="frame" x="125" y="58" width="49" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="MWK-Sz-8sy"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="RDl-SN-q1r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="部门" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOe-zu-zeb" userLabel="Dept Label">
+                    <rect key="frame" x="125" y="100" width="235" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Ses-PU-5e9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlC-Hc-INL" userLabel="Work Num Label">
+                    <rect key="frame" x="216" y="71" width="41.5" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="svh-gG-4Sh" userLabel="Gender Image">
+                    <rect key="frame" x="179" y="65" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="ABH-Oh-UxP"/>
+                        <constraint firstAttribute="height" constant="16" id="jMa-bk-u4F"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个性签名" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CO7-Lp-Coj" userLabel="Sign Label">
+                    <rect key="frame" x="125" y="131" width="200" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="DTu-2p-N8I" firstAttribute="top" secondItem="CXv-rO-TLl" secondAttribute="top" id="8Cu-Qa-A8p"/>
+                <constraint firstItem="6cH-NP-pms" firstAttribute="leading" secondItem="zdf-wd-drP" secondAttribute="leading" multiplier="50:375" constant="50" id="DAl-BY-eKh"/>
+                <constraint firstItem="CO7-Lp-Coj" firstAttribute="top" secondItem="DOe-zu-zeb" secondAttribute="bottom" constant="15" id="aZb-dl-nY6"/>
+                <constraint firstItem="svh-gG-4Sh" firstAttribute="leading" secondItem="c4P-Xz-poy" secondAttribute="trailing" constant="5" id="bya-Gc-LbU"/>
+                <constraint firstItem="DOe-zu-zeb" firstAttribute="top" secondItem="c4P-Xz-poy" secondAttribute="bottom" constant="12" id="dTa-1e-akm"/>
+                <constraint firstItem="c4P-Xz-poy" firstAttribute="leading" secondItem="6cH-NP-pms" secondAttribute="trailing" constant="15" id="hcz-Eb-xM0"/>
+                <constraint firstItem="DTu-2p-N8I" firstAttribute="leading" secondItem="CXv-rO-TLl" secondAttribute="leading" id="l6V-vz-IEF"/>
+                <constraint firstItem="DOe-zu-zeb" firstAttribute="leading" secondItem="6cH-NP-pms" secondAttribute="trailing" constant="15" id="mJU-5w-7gO"/>
+                <constraint firstItem="CO7-Lp-Coj" firstAttribute="leading" secondItem="DOe-zu-zeb" secondAttribute="leading" id="msB-Op-Gkl"/>
+                <constraint firstItem="zdf-wd-drP" firstAttribute="bottom" secondItem="DTu-2p-N8I" secondAttribute="bottom" constant="16" id="n4F-pn-hZh"/>
+                <constraint firstItem="c4P-Xz-poy" firstAttribute="top" secondItem="6cH-NP-pms" secondAttribute="top" id="n6N-id-6oD"/>
+                <constraint firstItem="svh-gG-4Sh" firstAttribute="centerY" secondItem="c4P-Xz-poy" secondAttribute="centerY" id="nhz-3D-Cqq"/>
+                <constraint firstItem="zdf-wd-drP" firstAttribute="trailing" secondItem="CO7-Lp-Coj" secondAttribute="trailing" constant="50" id="poY-qC-cfJ"/>
+                <constraint firstAttribute="trailing" secondItem="DTu-2p-N8I" secondAttribute="trailing" id="s8b-9K-oRk"/>
+                <constraint firstItem="6cH-NP-pms" firstAttribute="top" secondItem="zdf-wd-drP" secondAttribute="top" multiplier="65:375" constant="58" id="uAt-9Z-F1m"/>
+                <constraint firstItem="zdf-wd-drP" firstAttribute="trailing" secondItem="DOe-zu-zeb" secondAttribute="trailing" constant="15" id="yCN-Fi-Qik"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="zdf-wd-drP"/>
+            <connections>
+                <outlet property="avatarImageView" destination="6cH-NP-pms" id="Azx-EW-qrQ"/>
+                <outlet property="backgroundImageView" destination="DTu-2p-N8I" id="MF2-nD-0A6"/>
+                <outlet property="deptLabel" destination="DOe-zu-zeb" id="ZH6-uZ-k7o"/>
+                <outlet property="genderIconView" destination="svh-gG-4Sh" id="qXI-s5-DVa"/>
+                <outlet property="nameLabel" destination="c4P-Xz-poy" id="3P9-kp-J7R"/>
+                <outlet property="signLabel" destination="CO7-Lp-Coj" id="z3y-3E-G0L"/>
+                <outlet property="workNumLabel" destination="qlC-Hc-INL" id="eTX-91-gCu"/>
+            </connections>
+            <point key="canvasLocation" x="92.5" y="-47.5"/>
+        </view>
+    </objects>
+</document>
